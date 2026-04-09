@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  
+  title: "Rescata una laptop con linux: 🐧 una guía básica"
+  description: "Guía para estudiantes: instala Linux paso a paso"
+  favicon: "https://img.icons8.com/color/48/linux.png"
+  #favicon: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
+  navbar:
+    background: "#2d3a4a"
+    foreground: "white"
+    left:
+      - href: index.qmd
+        text: "🏠 Inicio"
+      - href: elige-distro.qmd
+        text: "🔍 Elige tu Distro"
+      - href: crea-usb.qmd
+        text: "💾 Crea tu USB"
+      - href: instalacion.qmd
+        text: "⚙️ Instalación"
+  page-footer:
+    center: "Guía para estudiantes · Linux en laptops viejas"
+    background: "#2d3a4a"
+
+format:
+  html:
+    theme: [flatly, custom.scss]
+    toc: true
+    toc-title: "En esta página"
+    number-sections: false
+    smooth-scroll: true
+    link-external-newpage: true
+author:
+  - name: Roberto Álvarez
+    affiliation: 
+      - Laboratorio de Biología Cuantitativa y Sistemas Complejos
+      - Facultad de Ciencias Naturales, Universidad Autónoma de Querétaro

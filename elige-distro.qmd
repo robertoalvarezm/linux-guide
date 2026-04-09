@@ -1,0 +1,106 @@
+---
+title: "🔍 Elige tu distribución (distro) de Linux"
+---
+
+El rendimiento en Linux no depende tanto de "qué Linux" sino del **entorno de escritorio**, es decir, de cuántos recursos visuales consume. Esta página te ayuda a encontrar la combinación correcta para tu laptop.
+
+---
+
+## 1. Corre un quiz de distros
+
+Antes de buscar en Google al azar, usa estas herramientas para filtrar opciones según tus preferencias:
+
+::: {.callout-note icon="false" title="🧩 DistroChooser — Cuestionario completo (también en español)"}
+No analiza tu PC, pero hace preguntas inteligentes sobre tus necesidades y experiencia.
+
+👉 [distrotest.net/chooser](https://distrochooser.de/es)
+:::
+
+::: {.callout-note icon="false" title="🤖 DistroWiz — Quiz con IA"}
+Quiz rápido para explorar opciones. Útil si quieres algo más conversacional.
+
+👉 [distrowiz.com](https://distrowiz.com)
+:::
+
+---
+
+## 2. Prueba distros sin instalar nada
+
+Antes de formatear tu laptop, puedes **probar la distro en el navegador**
+Esta página te permite ver cómo se vería la distro de linux cuando la instales en tu computadora:
+
+::: {.callout-tip icon="false" title="🌐 DistroSea — Test-drive en la nube"}
+Permite correr distros completas desde el navegador. Excelente para ver si el entorno te convence antes de comprometer tu USB.
+
+👉 [distrosea.com](https://distrosea.com)
+:::
+
+---
+
+## 3. Filtra según tu hardware
+
+Las limitantes de las distribuiciones no son tanto el nombre o la marca, sino el **entorno de escritorio** que usan y por lo tanto los recurso que usan.
+
+Con la lista del quiz en mano, filtra usando la RAM y tipo de disco de tu laptop:
+
+| Tu RAM | Qué buscar |
+|--------|------------|
+| ≤ 2 GB | antiX, Puppy Linux, Alpine, distros con window managers ligeros |
+| 4 GB | Entornos XFCE o LXQt; **evita GNOME** si quieres fluidez |
+| 8 GB+ | Casi cualquier distro; elige por gusto y uso |
+
+::: {.callout-important icon="true" title="SSD vs HDD importa mucho"}
+Si tu laptop tiene **disco duro mecánico (HDD)**, cualquier distro se sentirá lenta comparada con un SSD. Si puedes, considera cambiar a SSD antes de instalar.
+:::
+
+---
+
+## 4. Distros recomendadas según tu perfil
+
+### 🟢 Perfil 1 — Laptop "normal" {.profile-green}
+
+::: {.profile-card .profile-green}
+**Tienes:** 8 GB RAM o más, SSD, laptop 2015 o más reciente
+
+✅ **Linux Mint (Cinnamon)** o **Ubuntu LTS**
+
+- Mint se siente más familiar si vienes de Windows.
+- Ubuntu tiene mucha documentación y soporte comunitario.
+:::
+
+### 🟡 Perfil 2 — Laptop "limitada" {.profile-yellow}
+
+::: {.profile-card .profile-yellow}
+**Tienes:** 4 GB RAM o disco duro mecánico (HDD), laptop vieja
+
+✅ **Xubuntu (XFCE)** o **Linux Mint XFCE**
+
+- Más ligero, muy estable, suficiente para uso académico.
+:::
+
+### 🔴 Perfil 3 — Laptop muy vieja {.profile-red}
+
+::: {.profile-card .profile-red}
+**Tienes:** 2 GB RAM o menos
+
+✅ **Lubuntu (LXQt)**
+
+- La opción más ligera de las "mainstream".
+- Aún puede ir lento si el disco es HDD viejo.
+:::
+
+---
+
+## Regla rápida
+
+```
+8 GB+  → Linux Mint Cinnamon / Ubuntu
+4 GB   → Xubuntu / Mint XFCE
+≤ 2 GB → Lubuntu
+```
+
+---
+
+::: {.callout-tip icon="false" title="¿Ya tienes tu distro? 👉"}
+Continúa con **[💾 Crea tu USB](crea-usb.qmd)**
+:::

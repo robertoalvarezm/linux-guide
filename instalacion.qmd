@@ -1,0 +1,117 @@
+---
+title: "⚙️ Arrancar desde la USB e Instalar"
+---
+
+Ya tienes tu USB *booteable*. Ahora hay que hacer que la laptop arranque desde ella en lugar del disco duro.
+
+---
+
+## Paso 1 — Encuentra la tecla de Boot Menu de tu laptop
+
+Cada marca tiene una tecla diferente. Presiónala **repetidamente** al encender la laptop (antes de que aparezca el logo de Windows).
+
+::: {.callout-important icon="true" title="¿Cuál es tu tecla?"}
+| Marca | Tecla de Boot Menu |
+|-------|-------------------|
+| Acer | `F12` |
+| Dell | `F12` |
+| HP | `Esc` o `F9` |
+| Lenovo | `F12` o botón **Novo** |
+| ASUS | `Esc` o `F8` |
+| MSI | `F11` |
+| Toshiba | `F12` |
+| Samsung | `Esc` o `F12` |
+| Huawei | `F12` |
+| Mac (Apple Silicon/Intel) | `Option (⌥)` |
+
+Si no aparece en la lista, busca "boot menu key [marca de tu laptop]".
+:::
+
+::: {.callout-tip icon="true" title="Si no puedes entrar al Boot Menu"}
+Puede ser necesario desactivar el **Secure Boot** desde la BIOS. Busca cómo hacerlo para tu modelo específico — generalmente está en `Setup > Security > Secure Boot`.
+:::
+
+---
+
+## Paso 2 — Selecciona la USB
+
+1. Apaga la laptop completamente.
+2. **Conecta la USB**.
+3. Enciende y presiona la tecla de Boot Menu de tu marca (ver tabla arriba).
+4. En el menú que aparece, selecciona tu USB.
+   - Puede aparecer como `"UEFI: NombreDetuUSB"` o simplemente el nombre de la marca de la USB.
+
+---
+
+## Paso 3 — Modo "Probar sin instalar" primero
+
+::: {.callout-warning icon="true" title="Haz esto antes de instalar"}
+Elige **"Try [nombre distro]"** (no "Install" todavía). Esto arranca un sistema live desde la USB sin tocar tu disco duro.
+:::
+
+Desde el modo live, verifica lo siguiente:
+
+::: {.callout-note icon="false" title="✅ Pruebas desde el sistema live"}
+- [ ] **Wi-Fi funciona** — conéctate a una red y abre el navegador.
+- [ ] **Teclado y trackpad responden** correctamente.
+- [ ] **Sonido funciona** — sube el volumen y reproduce algo.
+- [ ] **USB adicional detectada** — conecta otra USB y verifica que aparezca.
+- [ ] **Instalador detecta tu disco** — abre el instalador, llega a la pantalla de particiones (sin confirmar nada) y verifica que aparezca tu disco duro.
+:::
+
+::: {.callout-tip icon="true" title="Verificación de integridad desde GRUB"}
+Ubuntu y Mint incluyen una opción **"Check disc for defects"** en el menú inicial de arranque. Úsala si sospechas que la grabación tuvo errores.
+:::
+
+---
+
+## Paso 4 — Instalar Linux
+
+Si todo funcionó bien en el modo live, ya puedes instalar:
+
+1. Haz doble clic en el ícono **"Instalar [distro]"** en el escritorio.
+2. Sigue el asistente:
+   - Idioma y zona horaria.
+   - **Tipo de instalación:**
+     - **"Instalar junto a Windows"** → Dual boot (recomendado si no estás seguro).
+     - **"Borrar disco e instalar"** → Reemplaza todo; solo Linux.
+   - Crea tu usuario y contraseña.
+3. Espera ~15–30 minutos (más tiempo si tienes HDD).
+4. Al terminar, el sistema pedirá **reiniciar**. Retira la USB cuando te lo indique.
+
+::: {.callout-warning icon="true" title="Dual boot — Nota importante"}
+Si eliges dual boot, Linux creará un menú de arranque (GRUB) donde podrás elegir entre Windows y Linux cada vez que enciendas. No perderás Windows.
+:::
+
+---
+
+## ¿Qué hacer después de instalar?
+
+Una vez que arranca tu Linux por primera vez:
+
+::: {.callout-note icon="false" title="Primeros pasos post-instalación"}
+1. **Actualiza el sistema:**
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+2. **Instala los drivers adicionales** (en Mint/Ubuntu: *Menú → Administrador de controladores*).
+3. **Configura tu teclado en español** si es necesario.
+4. **Instala tus aplicaciones** — el gestor de software ya viene incluido.
+:::
+
+---
+
+## ¿Algo salió mal?
+
+| Problema | Solución probable |
+|----------|-------------------|
+| La laptop no arranca desde la USB | Verifica que la tecla de Boot Menu sea la correcta; intenta desactivar Secure Boot |
+| Wi-Fi no funciona en el live | Algunos adaptadores necesitan drivers propietarios; instálalos después |
+| El instalador no ve el disco | Tu disco puede estar en modo RAID/RST (Intel); busca cómo desactivarlo en BIOS |
+| Pantalla negra al arrancar | Prueba agregar `nomodeset` en las opciones de arranque de GRUB |
+
+---
+
+::: {.callout-tip icon="false" title="🎉 ¡Listo!"}
+Si llegaste aquí, ya tienes Linux funcionando. Cualquier duda, la comunidad de tu distro tiene foros muy activos en español.
+:::

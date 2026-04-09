@@ -1,0 +1,138 @@
+---
+title: "💾 Descarga la ISO y crea tu USB booteable"
+---
+
+Una USB booteable es tu "instalador físico" de Linux.  Es decir el sistema operativo radica en tu usb y no en tu disco duro. Esto te permite instalar Linux y también probarlo sin instalar (modo *live*).
+
+En esta página:
+
+1. Descargas el archivo de instalación (ISO)
+2. Lo "grabas" en la USB correctamente
+3. Verificas que quedó bien
+
+::: {.callout-warning icon="true" title="La USB se borrará completamente"}
+Usa una USB de **8 GB o más** que no tenga archivos importantes. Todo su contenido se eliminará durante el proceso. La USB debe ser de preferencia **nueva** ( después puedes borrala y reutilizarla o guardarla para instalar 💻 linux en otras compus)
+:::
+
+---
+
+## Paso 1 — Descarga la ISO
+
+Descarga el archivo `.iso` de la página **oficial** de la distro que elegiste:
+
+| Distro | Sitio oficial |
+|--------|---------------|
+| Linux Mint (Cinnamon o XFCE) | [linuxmint.com/download.php](https://linuxmint.com/download.php) |
+| Ubuntu LTS | [ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) |
+| Xubuntu (XFCE) | [xubuntu.org/download](https://xubuntu.org/download) |
+| Lubuntu (LXQt) | [lubuntu.me/downloads](https://lubuntu.me/downloads) |
+| Pop!\_OS | [pop.system76.com](https://pop.system76.com) |
+
+::: {.callout-important icon="true" title="Solo sitios oficiales"}
+No uses "instaladores raros" ni fuentes de terceros. Los archivos `.iso` de sitios no oficiales pueden estar modificados o contener malware.
+:::
+
+El archivo pesa entre **2 y 5 GB** aproximadamente. Guárdalo en una carpeta fácil de encontrar (ej. `Descargas`).
+
+### Verificar integridad (recomendado)
+
+
+Cada distro publica un **hash SHA256** junto a la descarga. Compáralo con el de tu archivo:
+
+Acá están als instrucciones para hacer esa verificación en cada sistema operativo:
+
+::: {.panel-tabset}
+## Windows (PowerShell)
+
+```powershell
+Get-FileHash .\archivo.iso -Algorithm SHA256
+```
+
+## macOS (Terminal)
+
+```bash
+shasum -a 256 /ruta/archivo.iso
+```
+
+## Linux (Terminal)
+
+```bash
+sha256sum /ruta/archivo.iso
+```
+:::
+
+Si el hash coincide con el del sitio oficial, el archivo está íntegro ✅
+
+---
+
+## Paso 2 — Graba la ISO en la USB
+
+Para grabar de forma correcta el archivo `.iso` en la USB, necesitas una herramienta especializada que haga eso. 
+
+- **NO DEBES copiar y pegar el archivo en la USB.**
+
+::: {.panel-tabset}
+## 🪟 Windows — Rufus
+
+**Rufus** es gratuito, portable (no necesita instalación) y muy confiable.
+
+1. Descarga Rufus desde [rufus.ie](https://rufus.ie) (versión portable).
+2. Conecta la USB.
+3. Abre Rufus y configura:
+
+| Campo | Valor |
+|-------|-------|
+| **Dispositivo** | Tu USB |
+| **Selección de arranque** | Tu archivo `.iso` |
+| **Esquema de partición** | GPT (laptop moderna/UEFI) o MBR (laptop muy vieja/BIOS) |
+| **Sistema de destino** | UEFI (recomendado) o BIOS |
+
+4. Clic en **Empezar** → confirma que se borrará la USB → espera ~5–10 min.
+
+::: {.callout-tip icon="true"}
+¿No sabes si GPT o MBR? Deja el valor que Rufus elige por defecto — suele acertar.
+:::
+
+## 🍎 macOS — balenaEtcher
+
+**balenaEtcher** tiene una interfaz visual muy sencilla.
+
+1. Descarga desde [etcher.balena.io](https://etcher.balena.io).
+2. Abre la app (puede pedir permisos en Privacidad y Seguridad — concédelos).
+3. Dentro de la app:
+   - **Flash from file** → selecciona tu `.iso`
+   - **Select target** → selecciona tu USB (¡cuidado de no elegir un disco externo!)
+   - **Flash!** → espera ~5–15 min.
+
+Al terminar, Etcher valida automáticamente la escritura ✅
+
+## 🐧 Linux — balenaEtcher o Discos
+
+**Opción 1: balenaEtcher** (igual que en macOS — descarga desde [etcher.balena.io](https://etcher.balena.io))
+
+**Opción 2: Startup Disk Creator** (viene preinstalado en Ubuntu)
+
+**Opción 3: `dd` desde terminal** (para usuarios avanzados)
+```bash
+sudo dd if=/ruta/archivo.iso of=/dev/sdX bs=4M status=progress
+```
+*(Reemplaza `/dev/sdX` con el dispositivo correcto de tu USB — verifica con `lsblk`)*
+:::
+
+---
+
+## Paso 3 — Verifica que la USB quedó bien
+
+Antes de ir a instalar, haz estas pruebas rápidas:
+
+::: {.callout-note icon="false" title="✅ Lista de verificación de la USB"}
+- [ ] El archivo `.iso` se grabó sin errores (Rufus/Etcher mostraron "completado")
+- [ ] La USB aparece en el explorador de archivos con nombre de la distro
+- [ ] El hash SHA256 coincidió con el del sitio oficial
+:::
+
+---
+
+::: {.callout-tip icon="false" title="¿USB lista? 👉"}
+Continúa con **[⚙️ Instalación](instalacion.qmd)**
+:::

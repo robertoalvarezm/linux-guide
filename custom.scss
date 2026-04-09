@@ -1,0 +1,64 @@
+/*-- scss:defaults --*/
+$primary:   #e05c2e;
+$secondary: #2d8a6e;
+$info:      #3a7abf;
+$warning:   #f0a500;
+$success:   #2d8a6e;
+$danger:    #c0392b;
+
+$font-family-base: 'Segoe UI', system-ui, sans-serif;
+$headings-font-weight: 700;
+$link-color: $primary;
+
+/*-- scss:rules --*/
+
+/* Navbar branding */
+.navbar-brand { font-weight: 800; font-size: 1.2rem; }
+
+/* Hero banner on home page */
+.hero-banner {
+  background: linear-gradient(135deg, #1a2a3a 0%, #2d8a6e 60%, #e05c2e 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hero-banner h1 { color: white; font-size: 2.5rem; margin-bottom: .5rem; }
+.hero-banner p  { font-size: 1.15rem; opacity: .9; }
+
+/* Profile cards */
+.profile-card {
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid;
+}
+.profile-green  { background: #eafaf1; border-color: #2d8a6e; }
+.profile-yellow { background: #fefce8; border-color: #f0a500; }
+.profile-red    { background: #fdf2f2; border-color: #c0392b; }
+
+/* Step badges */
+.step-badge {
+  display: inline-block;
+  background: $primary;
+  color: white;
+  border-radius: 50%;
+  width: 2rem; height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 800;
+  margin-right: .5rem;
+}
+
+/* Code blocks nicer */
+pre.sourceCode { border-radius: 8px; }
+
+/* TOC highlight */
+#TOC a.active { color: $primary; font-weight: 600; }
+
+/* Section dividers */
+hr { border-color: #dce3ea; margin: 2rem 0; }
+
+/* Table of distros */
+.distro-table th { background: #2d3a4a; color: white; }

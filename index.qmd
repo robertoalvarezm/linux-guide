@@ -1,0 +1,59 @@
+---
+title: ""
+---
+
+::: {.hero-banner}
+# 🐧 Linux en laptops viejas
+
+**Guía paso a paso para estudiantes** — desde elegir tu distribución hasta arrancar por primera vez.
+:::
+
+## ¿Por qué instalar Linux?
+
+Linux puede revivir una laptop vieja que ya no corre Windows con fluidez. El secreto está en elegir la distribución correcta para **tu** hardware específico.
+
+Esta guía tiene 3 pasos:
+
+| Paso | Qué harás |
+|------|-----------|
+| [🔍 Elige tu distro](elige-distro.qmd) | Descubre qué distribución va con tu laptop |
+| [💾 Crea tu USB](crea-usb.qmd) | Descarga la ISO y prepara la USB de instalación |
+| [⚙️ Instalación](instalacion.qmd) | Arranca desde la USB e instala Linux |
+
+---
+
+## ✅ Checklist antes de empezar
+
+Antes de cualquier otra cosa, asegúrate de tener esto listo:
+
+::: {.callout-warning icon="true" title="⚠️ Haz esto PRIMERO — 5 min que te ahorran horas"}
+- [ ] **Respaldaste** todo lo importante: Documentos, Escritorio, Descargas, Proyectos.
+  - Si usas Windows: verifica que OneDrive / Google Drive estén sincronizados.
+- [ ] **Cargador conectado** durante toda la instalación.
+- [ ] **USB de 8 GB o más** disponible (se borrará completa).
+- [ ] **Conexión a internet** disponible (idealmente Wi-Fi estable).
+:::
+
+---
+
+## 🗂️ Decide tu modo de instalación
+
+Antes de continuar, decide qué quieres hacer:
+
+::: {.callout-note icon="true" title="Opción A — Dual Boot (Windows + Linux)"}
+Mantiene Windows y agrega Linux. **Recomendado** si necesitas Windows para algo específico.
+:::
+
+::: {.callout-tip icon="true" title="Opción B — Reemplazar Windows por Linux"}
+Borra todo y solo queda Linux. Úsala solo si ya estás segurx.
+:::
+
+::: {.callout-important icon="true" title="Opción C — Probar sin instalar (Live USB)"}
+Arranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi, teclado y pantalla funcionen antes de comprometerte.
+:::
+
+---
+
+::: {.callout-tip icon="false" title="¿Por dónde empiezo?"}
+👉 Ve a **[🔍 Elige tu distro](elige-distro.qmd)** para empezar.
+:::

@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "instalacion.html",
+    "href": "instalacion.html",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "",
+    "text": "Ya tienes tu USB booteable. Ahora hay que hacer que la laptop arranque desde ella en lugar del disco duro."
+  },
+  {
+    "objectID": "instalacion.html#paso-1-encuentra-la-tecla-de-boot-menu-de-tu-laptop",
+    "href": "instalacion.html#paso-1-encuentra-la-tecla-de-boot-menu-de-tu-laptop",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "Paso 1 — Encuentra la tecla de Boot Menu de tu laptop",
+    "text": "Paso 1 — Encuentra la tecla de Boot Menu de tu laptop\nCada marca tiene una tecla diferente. Presiónala repetidamente al encender la laptop (antes de que aparezca el logo de Windows).\n\n\n\n\n\n\nImportant¿Cuál es tu tecla?\n\n\n\n\n\n\nMarca\nTecla de Boot Menu\n\n\n\n\nAcer\nF12\n\n\nDell\nF12\n\n\nHP\nEsc o F9\n\n\nLenovo\nF12 o botón Novo\n\n\nASUS\nEsc o F8\n\n\nMSI\nF11\n\n\nToshiba\nF12\n\n\nSamsung\nEsc o F12\n\n\nHuawei\nF12\n\n\nMac (Apple Silicon/Intel)\nOption (⌥)\n\n\n\nSi no aparece en la lista, busca “boot menu key [marca de tu laptop]”.\n\n\n\n\n\n\n\n\nTipSi no puedes entrar al Boot Menu\n\n\n\nPuede ser necesario desactivar el Secure Boot desde la BIOS. Busca cómo hacerlo para tu modelo específico — generalmente está en Setup &gt; Security &gt; Secure Boot."
+  },
+  {
+    "objectID": "instalacion.html#paso-2-selecciona-la-usb",
+    "href": "instalacion.html#paso-2-selecciona-la-usb",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "Paso 2 — Selecciona la USB",
+    "text": "Paso 2 — Selecciona la USB\n\nApaga la laptop completamente.\nConecta la USB.\nEnciende y presiona la tecla de Boot Menu de tu marca (ver tabla arriba).\nEn el menú que aparece, selecciona tu USB.\n\nPuede aparecer como \"UEFI: NombreDetuUSB\" o simplemente el nombre de la marca de la USB."
+  },
+  {
+    "objectID": "instalacion.html#paso-3-modo-probar-sin-instalar-primero",
+    "href": "instalacion.html#paso-3-modo-probar-sin-instalar-primero",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "Paso 3 — Modo “Probar sin instalar” primero",
+    "text": "Paso 3 — Modo “Probar sin instalar” primero\n\n\n\n\n\n\nWarningHaz esto antes de instalar\n\n\n\nElige “Try [nombre distro]” (no “Install” todavía). Esto arranca un sistema live desde la USB sin tocar tu disco duro.\n\n\nDesde el modo live, verifica lo siguiente:\n\n\n\n\n\n\nNote✅ Pruebas desde el sistema live\n\n\n\n\nWi-Fi funciona — conéctate a una red y abre el navegador.\nTeclado y trackpad responden correctamente.\nSonido funciona — sube el volumen y reproduce algo.\nUSB adicional detectada — conecta otra USB y verifica que aparezca.\nInstalador detecta tu disco — abre el instalador, llega a la pantalla de particiones (sin confirmar nada) y verifica que aparezca tu disco duro.\n\n\n\n\n\n\n\n\n\nTipVerificación de integridad desde GRUB\n\n\n\nUbuntu y Mint incluyen una opción “Check disc for defects” en el menú inicial de arranque. Úsala si sospechas que la grabación tuvo errores."
+  },
+  {
+    "objectID": "instalacion.html#paso-4-instalar-linux",
+    "href": "instalacion.html#paso-4-instalar-linux",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "Paso 4 — Instalar Linux",
+    "text": "Paso 4 — Instalar Linux\nSi todo funcionó bien en el modo live, ya puedes instalar:\n\nHaz doble clic en el ícono “Instalar [distro]” en el escritorio.\nSigue el asistente:\n\nIdioma y zona horaria.\nTipo de instalación:\n\n“Instalar junto a Windows” → Dual boot (recomendado si no estás seguro).\n“Borrar disco e instalar” → Reemplaza todo; solo Linux.\n\nCrea tu usuario y contraseña.\n\nEspera ~15–30 minutos (más tiempo si tienes HDD).\nAl terminar, el sistema pedirá reiniciar. Retira la USB cuando te lo indique.\n\n\n\n\n\n\n\nWarningDual boot — Nota importante\n\n\n\nSi eliges dual boot, Linux creará un menú de arranque (GRUB) donde podrás elegir entre Windows y Linux cada vez que enciendas. No perderás Windows."
+  },
+  {
+    "objectID": "instalacion.html#qué-hacer-después-de-instalar",
+    "href": "instalacion.html#qué-hacer-después-de-instalar",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "¿Qué hacer después de instalar?",
+    "text": "¿Qué hacer después de instalar?\nUna vez que arranca tu Linux por primera vez:\n\n\n\n\n\n\nNotePrimeros pasos post-instalación\n\n\n\n\nActualiza el sistema:\nsudo apt update && sudo apt upgrade -y\nInstala los drivers adicionales (en Mint/Ubuntu: Menú → Administrador de controladores).\nConfigura tu teclado en español si es necesario.\nInstala tus aplicaciones — el gestor de software ya viene incluido."
+  },
+  {
+    "objectID": "instalacion.html#algo-salió-mal",
+    "href": "instalacion.html#algo-salió-mal",
+    "title": "⚙️ Arrancar desde la USB e Instalar",
+    "section": "¿Algo salió mal?",
+    "text": "¿Algo salió mal?\n\n\n\n\n\n\n\nProblema\nSolución probable\n\n\n\n\nLa laptop no arranca desde la USB\nVerifica que la tecla de Boot Menu sea la correcta; intenta desactivar Secure Boot\n\n\nWi-Fi no funciona en el live\nAlgunos adaptadores necesitan drivers propietarios; instálalos después\n\n\nEl instalador no ve el disco\nTu disco puede estar en modo RAID/RST (Intel); busca cómo desactivarlo en BIOS\n\n\nPantalla negra al arrancar\nPrueba agregar nomodeset en las opciones de arranque de GRUB\n\n\n\n\n\n\n\n\n\n\nTip🎉 ¡Listo!\n\n\n\nSi llegaste aquí, ya tienes Linux funcionando. Cualquier duda, la comunidad de tu distro tiene foros muy activos en español."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "",
+    "text": "Guía paso a paso para estudiantes — desde elegir tu distribución hasta arrancar por primera vez."
+  },
+  {
+    "objectID": "index.html#por-qué-instalar-linux",
+    "href": "index.html#por-qué-instalar-linux",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "¿Por qué instalar Linux?",
+    "text": "¿Por qué instalar Linux?\nLinux puede revivir una laptop vieja que ya no corre Windows con fluidez. El secreto está en elegir la distribución correcta para tu hardware específico.\nEsta guía tiene 3 pasos:\n\n\n\nPaso\nQué harás\n\n\n\n\n🔍 Elige tu distro\nDescubre qué distribución va con tu laptop\n\n\n💾 Crea tu USB\nDescarga la ISO y prepara la USB de instalación\n\n\n⚙️ Instalación\nArranca desde la USB e instala Linux"
+  },
+  {
+    "objectID": "index.html#checklist-antes-de-empezar",
+    "href": "index.html#checklist-antes-de-empezar",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "✅ Checklist antes de empezar",
+    "text": "✅ Checklist antes de empezar\nAntes de cualquier otra cosa, asegúrate de tener esto listo:\n\n\n\n\n\n\nWarning⚠️ Haz esto PRIMERO — 5 min que te ahorran horas\n\n\n\n\nRespaldaste todo lo importante: Documentos, Escritorio, Descargas, Proyectos.\n\nSi usas Windows: verifica que OneDrive / Google Drive estén sincronizados.\n\nCargador conectado durante toda la instalación.\nUSB de 8 GB o más disponible (se borrará completa).\nConexión a internet disponible (idealmente Wi-Fi estable)."
+  },
+  {
+    "objectID": "index.html#decide-tu-modo-de-instalación",
+    "href": "index.html#decide-tu-modo-de-instalación",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "🗂️ Decide tu modo de instalación",
+    "text": "🗂️ Decide tu modo de instalación\nAntes de continuar, decide qué quieres hacer:\n\n\n\n\n\n\nNoteOpción A — Dual Boot (Windows + Linux)\n\n\n\nMantiene Windows y agrega Linux. Recomendado si necesitas Windows para algo específico.\n\n\n\n\n\n\n\n\nTipOpción B — Reemplazar Windows por Linux\n\n\n\nBorra todo y solo queda Linux. Úsala solo si ya estás segurx.\n\n\n\n\n\n\n\n\nImportantOpción C — Probar sin instalar (Live USB)\n\n\n\nArranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi, teclado y pantalla funcionen antes de comprometerte.\n\n\n\n\n\n\n\n\n\nTip¿Por dónde empiezo?\n\n\n\n👉 Ve a 🔍 Elige tu distro para empezar."
+  },
+  {
+    "objectID": "elige-distro.html",
+    "href": "elige-distro.html",
+    "title": "🔍 Elige tu distribución (distro) de Linux",
+    "section": "",
+    "text": "El rendimiento en Linux no depende tanto de “qué Linux” sino del entorno de escritorio, es decir, de cuántos recursos visuales consume. Esta página te ayuda a encontrar la combinación correcta para tu laptop."
+  },
+  {
+    "objectID": "elige-distro.html#corre-un-quiz-de-distros",
+    "href": "elige-distro.html#corre-un-quiz-de-distros",
+    "title": "🔍 Elige tu distribución (distro) de Linux",
+    "section": "1. Corre un quiz de distros",
+    "text": "1. Corre un quiz de distros\nAntes de buscar en Google al azar, usa estas herramientas para filtrar opciones según tus preferencias:\n\n\n\n\n\n\nNote🧩 DistroChooser — Cuestionario completo (también en español)\n\n\n\nNo analiza tu PC, pero hace preguntas inteligentes sobre tus necesidades y experiencia.\n👉 distrotest.net/chooser\n\n\n\n\n\n\n\n\nNote🤖 DistroWiz — Quiz con IA\n\n\n\nQuiz rápido para explorar opciones. Útil si quieres algo más conversacional.\n👉 distrowiz.com"
+  },
+  {
+    "objectID": "elige-distro.html#prueba-distros-sin-instalar-nada",
+    "href": "elige-distro.html#prueba-distros-sin-instalar-nada",
+    "title": "🔍 Elige tu distribución (distro) de Linux",
+    "section": "2. Prueba distros sin instalar nada",
+    "text": "2. Prueba distros sin instalar nada\nAntes de formatear tu laptop, puedes probar la distro en el navegador Esta página te permite ver cómo se vería la distro de linux cuando la instales en tu computadora:\n\n\n\n\n\n\nTip🌐 DistroSea — Test-drive en la nube\n\n\n\nPermite correr distros completas desde el navegador. Excelente para ver si el entorno te convence antes de comprometer tu USB.\n👉 distrosea.com"
+  },
+  {
+    "objectID": "elige-distro.html#filtra-según-tu-hardware",
+    "href": "elige-distro.html#filtra-según-tu-hardware",
+    "title": "🔍 Elige tu distribución (distro) de Linux",
+    "section": "3. Filtra según tu hardware",
+    "text": "3. Filtra según tu hardware\nLas limitantes de las distribuiciones no son tanto el nombre o la marca, sino el entorno de escritorio que usan y por lo tanto los recurso que usan.\nCon la lista del quiz en mano, filtra usando la RAM y tipo de disco de tu laptop:\n\n\n\n\n\n\n\nTu RAM\nQué buscar\n\n\n\n\n≤ 2 GB\nantiX, Puppy Linux, Alpine, distros con window managers ligeros\n\n\n4 GB\nEntornos XFCE o LXQt; evita GNOME si quieres fluidez\n\n\n8 GB+\nCasi cualquier distro; elige por gusto y uso\n\n\n\n\n\n\n\n\n\nImportantSSD vs HDD importa mucho\n\n\n\nSi tu laptop tiene disco duro mecánico (HDD), cualquier distro se sentirá lenta comparada con un SSD. Si puedes, considera cambiar a SSD antes de instalar."
+  },
+  {
+    "objectID": "elige-distro.html#distros-recomendadas-según-tu-perfil",
+    "href": "elige-distro.html#distros-recomendadas-según-tu-perfil",
+    "title": "🔍 Elige tu distribución (distro) de Linux",
+    "section": "4. Distros recomendadas según tu perfil",
+    "text": "4. Distros recomendadas según tu perfil\n\n🟢 Perfil 1 — Laptop “normal”\n\nTienes: 8 GB RAM o más, SSD, laptop 2015 o más reciente\n✅ Linux Mint (Cinnamon) o Ubuntu LTS\n\nMint se siente más familiar si vienes de Windows.\nUbuntu tiene mucha documentación y soporte comunitario.\n\n\n\n\n🟡 Perfil 2 — Laptop “limitada”\n\nTienes: 4 GB RAM o disco duro mecánico (HDD), laptop vieja\n✅ Xubuntu (XFCE) o Linux Mint XFCE\n\nMás ligero, muy estable, suficiente para uso académico.\n\n\n\n\n🔴 Perfil 3 — Laptop muy vieja\n\nTienes: 2 GB RAM o menos\n✅ Lubuntu (LXQt)\n\nLa opción más ligera de las “mainstream”.\nAún puede ir lento si el disco es HDD viejo."
+  },
+  {
+    "objectID": "elige-distro.html#regla-rápida",
+    "href": "elige-distro.html#regla-rápida",
+    "title": "🔍 Elige tu distribución (distro) de Linux",
+    "section": "Regla rápida",
+    "text": "Regla rápida\n8 GB+  → Linux Mint Cinnamon / Ubuntu\n4 GB   → Xubuntu / Mint XFCE\n≤ 2 GB → Lubuntu\n\n\n\n\n\n\n\nTip¿Ya tienes tu distro? 👉\n\n\n\nContinúa con 💾 Crea tu USB"
+  },
+  {
+    "objectID": "crea-usb.html",
+    "href": "crea-usb.html",
+    "title": "💾 Descarga la ISO y crea tu USB booteable",
+    "section": "",
+    "text": "Una USB booteable es tu “instalador físico” de Linux. Es decir el sistema operativo radica en tu usb y no en tu disco duro. Esto te permite instalar Linux y también probarlo sin instalar (modo live).\nEn esta página:"
+  },
+  {
+    "objectID": "crea-usb.html#paso-1-descarga-la-iso",
+    "href": "crea-usb.html#paso-1-descarga-la-iso",
+    "title": "💾 Descarga la ISO y crea tu USB booteable",
+    "section": "Paso 1 — Descarga la ISO",
+    "text": "Paso 1 — Descarga la ISO\nDescarga el archivo .iso de la página oficial de la distro que elegiste:\n\n\n\nDistro\nSitio oficial\n\n\n\n\nLinux Mint (Cinnamon o XFCE)\nlinuxmint.com/download.php\n\n\nUbuntu LTS\nubuntu.com/download/desktop\n\n\nXubuntu (XFCE)\nxubuntu.org/download\n\n\nLubuntu (LXQt)\nlubuntu.me/downloads\n\n\nPop!_OS\npop.system76.com\n\n\n\n\n\n\n\n\n\nImportantSolo sitios oficiales\n\n\n\nNo uses “instaladores raros” ni fuentes de terceros. Los archivos .iso de sitios no oficiales pueden estar modificados o contener malware.\n\n\nEl archivo pesa entre 2 y 5 GB aproximadamente. Guárdalo en una carpeta fácil de encontrar (ej. Descargas).\n\nVerificar integridad (recomendado)\nCada distro publica un hash SHA256 junto a la descarga. Compáralo con el de tu archivo:\nAcá están als instrucciones para hacer esa verificación en cada sistema operativo:\n\nWindows (PowerShell)macOS (Terminal)Linux (Terminal)\n\n\nGet-FileHash .\\archivo.iso -Algorithm SHA256\n\n\nshasum -a 256 /ruta/archivo.iso\n\n\nsha256sum /ruta/archivo.iso\n\n\n\nSi el hash coincide con el del sitio oficial, el archivo está íntegro ✅"
+  },
+  {
+    "objectID": "crea-usb.html#paso-2-graba-la-iso-en-la-usb",
+    "href": "crea-usb.html#paso-2-graba-la-iso-en-la-usb",
+    "title": "💾 Descarga la ISO y crea tu USB booteable",
+    "section": "Paso 2 — Graba la ISO en la USB",
+    "text": "Paso 2 — Graba la ISO en la USB\nPara grabar de forma correcta el archivo .iso en la USB, necesitas una herramienta especializada que haga eso.\n\nNO DEBES copiar y pegar el archivo en la USB.\n\n\n🪟 Windows — Rufus🍎 macOS — balenaEtcher🐧 Linux — balenaEtcher o Discos\n\n\nRufus es gratuito, portable (no necesita instalación) y muy confiable.\n\nDescarga Rufus desde rufus.ie (versión portable).\nConecta la USB.\nAbre Rufus y configura:\n\n\n\n\n\n\n\n\nCampo\nValor\n\n\n\n\nDispositivo\nTu USB\n\n\nSelección de arranque\nTu archivo .iso\n\n\nEsquema de partición\nGPT (laptop moderna/UEFI) o MBR (laptop muy vieja/BIOS)\n\n\nSistema de destino\nUEFI (recomendado) o BIOS\n\n\n\n\nClic en Empezar → confirma que se borrará la USB → espera ~5–10 min.\n\n\n\n\n\n\n\nTip\n\n\n\n¿No sabes si GPT o MBR? Deja el valor que Rufus elige por defecto — suele acertar.\n\n\n\n\nbalenaEtcher tiene una interfaz visual muy sencilla.\n\nDescarga desde etcher.balena.io.\nAbre la app (puede pedir permisos en Privacidad y Seguridad — concédelos).\nDentro de la app:\n\nFlash from file → selecciona tu .iso\nSelect target → selecciona tu USB (¡cuidado de no elegir un disco externo!)\nFlash! → espera ~5–15 min.\n\n\nAl terminar, Etcher valida automáticamente la escritura ✅\n\n\nOpción 1: balenaEtcher (igual que en macOS — descarga desde etcher.balena.io)\nOpción 2: Startup Disk Creator (viene preinstalado en Ubuntu)\nOpción 3: dd desde terminal (para usuarios avanzados)\nsudo dd if=/ruta/archivo.iso of=/dev/sdX bs=4M status=progress\n(Reemplaza /dev/sdX con el dispositivo correcto de tu USB — verifica con lsblk)"
+  },
+  {
+    "objectID": "crea-usb.html#paso-3-verifica-que-la-usb-quedó-bien",
+    "href": "crea-usb.html#paso-3-verifica-que-la-usb-quedó-bien",
+    "title": "💾 Descarga la ISO y crea tu USB booteable",
+    "section": "Paso 3 — Verifica que la USB quedó bien",
+    "text": "Paso 3 — Verifica que la USB quedó bien\nAntes de ir a instalar, haz estas pruebas rápidas:\n\n\n\n\n\n\nNote✅ Lista de verificación de la USB\n\n\n\n\nEl archivo .iso se grabó sin errores (Rufus/Etcher mostraron “completado”)\nLa USB aparece en el explorador de archivos con nombre de la distro\nEl hash SHA256 coincidió con el del sitio oficial\n\n\n\n\n\n\n\n\n\n\nTip¿USB lista? 👉\n\n\n\nContinúa con ⚙️ Instalación"
+  }
+]
