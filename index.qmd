@@ -55,5 +55,5 @@ Arranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi
 ---
 
 ::: {.callout-tip icon="false" title="¿Por dónde empiezo?"}
-👉 Ve a **[🔍 Elige tu distro](elige-distro.qmd)** para empezar.
+👉 Ve a **[🔍 ¿Qué es linux?](que-es-linux.qmd)** para darte una idea de qué sistema operativo vas a instalar.
 :::

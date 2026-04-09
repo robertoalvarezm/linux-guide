@@ -158,7 +158,7 @@
     "href": "index.html#decide-tu-modo-de-instalación",
     "title": "🐧 Linux en laptops viejas",
     "section": "🗂️ Decide tu modo de instalación",
-    "text": "🗂️ Decide tu modo de instalación\nAntes de continuar, decide qué quieres hacer:\n\n\n\n\n\n\nNoteOpción A — Dual Boot (Windows + Linux)\n\n\n\nMantiene Windows y agrega Linux. Recomendado si necesitas Windows para algo específico.\n\n\n\n\n\n\n\n\nTipOpción B — Reemplazar Windows por Linux\n\n\n\nBorra todo y solo queda Linux. Úsala solo si ya estás segurx.\n\n\n\n\n\n\n\n\nImportantOpción C — Probar sin instalar (Live USB)\n\n\n\nArranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi, teclado y pantalla funcionen antes de comprometerte.\n\n\n\n\n\n\n\n\n\nTip¿Por dónde empiezo?\n\n\n\n👉 Ve a 🔍 Elige tu distro para empezar."
+    "text": "🗂️ Decide tu modo de instalación\nAntes de continuar, decide qué quieres hacer:\n\n\n\n\n\n\nNoteOpción A — Dual Boot (Windows + Linux)\n\n\n\nMantiene Windows y agrega Linux. Recomendado si necesitas Windows para algo específico.\n\n\n\n\n\n\n\n\nTipOpción B — Reemplazar Windows por Linux\n\n\n\nBorra todo y solo queda Linux. Úsala solo si ya estás segurx.\n\n\n\n\n\n\n\n\nImportantOpción C — Probar sin instalar (Live USB)\n\n\n\nArranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi, teclado y pantalla funcionen antes de comprometerte.\n\n\n\n\n\n\n\n\n\nTip¿Por dónde empiezo?\n\n\n\n👉 Ve a 🔍 ¿Qué es linux? para darte una idea de qué sistema operativo vas a instalar."
   },
   {
     "objectID": "crea-usb.html",
