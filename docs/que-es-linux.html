@@ -8,7 +8,7 @@
 
 <meta name="author" content="Roberto Álvarez">
 
-<title>🔍 Elige tu distribución (distro) de Linux – Rescata una laptop con linux: 🐧 una guía básica</title>
+<title>🐧 ¿Qué es Linux y por qué importa? – Rescata una laptop con linux: 🐧 una guía básica</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,11 +99,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">🏠 Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./que-es-linux.html"> 
+    <a class="nav-link active" href="./que-es-linux.html" aria-current="page"> 
 <span class="menu-text">💡 ¿Qué es Linux?</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./elige-distro.html" aria-current="page"> 
+    <a class="nav-link" href="./elige-distro.html"> 
 <span class="menu-text">🔍 Elige tu Distro</span></a>
   </li>  
   <li class="nav-item">
@@ -130,16 +130,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#corre-un-quiz-de-distros" id="toc-corre-un-quiz-de-distros" class="nav-link active" data-scroll-target="#corre-un-quiz-de-distros">1. Corre un quiz de distros</a></li>
-  <li><a href="#prueba-distros-sin-instalar-nada" id="toc-prueba-distros-sin-instalar-nada" class="nav-link" data-scroll-target="#prueba-distros-sin-instalar-nada">2. Prueba distros sin instalar nada</a></li>
-  <li><a href="#filtra-según-tu-hardware" id="toc-filtra-según-tu-hardware" class="nav-link" data-scroll-target="#filtra-según-tu-hardware">3. Filtra según tu hardware</a></li>
-  <li><a href="#distros-recomendadas-según-tu-perfil" id="toc-distros-recomendadas-según-tu-perfil" class="nav-link" data-scroll-target="#distros-recomendadas-según-tu-perfil">4. Distros recomendadas según tu perfil</a>
+  <li><a href="#de-un-proyecto-estudiantil-a-millones-de-computadoras" id="toc-de-un-proyecto-estudiantil-a-millones-de-computadoras" class="nav-link active" data-scroll-target="#de-un-proyecto-estudiantil-a-millones-de-computadoras">De un proyecto estudiantil a millones de computadoras</a></li>
+  <li><a href="#un-poco-de-historia" id="toc-un-poco-de-historia" class="nav-link" data-scroll-target="#un-poco-de-historia">Un poco de historia</a>
   <ul class="collapse">
-  <li><a href="#perfil-1-laptop-normal" id="toc-perfil-1-laptop-normal" class="nav-link" data-scroll-target="#perfil-1-laptop-normal">🟢 Perfil 1 — Laptop “normal”</a></li>
-  <li><a href="#perfil-2-laptop-limitada" id="toc-perfil-2-laptop-limitada" class="nav-link" data-scroll-target="#perfil-2-laptop-limitada">🟡 Perfil 2 — Laptop “limitada”</a></li>
-  <li><a href="#perfil-3-laptop-muy-vieja" id="toc-perfil-3-laptop-muy-vieja" class="nav-link" data-scroll-target="#perfil-3-laptop-muy-vieja">🔴 Perfil 3 — Laptop muy vieja</a></li>
+  <li><a href="#el-principio-unix-y-la-semilla-libre" id="toc-el-principio-unix-y-la-semilla-libre" class="nav-link" data-scroll-target="#el-principio-unix-y-la-semilla-libre">El principio: Unix y la semilla libre</a></li>
+  <li><a href="#linus-torvalds-escribe-el-kernel" id="toc-linus-torvalds-escribe-el-kernel" class="nav-link" data-scroll-target="#linus-torvalds-escribe-el-kernel">1991 — Linus Torvalds escribe el kernel</a></li>
+  <li><a href="#la-explosión-de-las-distribuciones" id="toc-la-explosión-de-las-distribuciones" class="nav-link" data-scroll-target="#la-explosión-de-las-distribuciones">La explosión de las distribuciones</a></li>
   </ul></li>
-  <li><a href="#regla-rápida" id="toc-regla-rápida" class="nav-link" data-scroll-target="#regla-rápida">Regla rápida</a></li>
+  <li><a href="#la-filosofía-detrás-de-linux" id="toc-la-filosofía-detrás-de-linux" class="nav-link" data-scroll-target="#la-filosofía-detrás-de-linux">La filosofía detrás de Linux</a></li>
+  <li><a href="#linux-hoy-más-presente-de-lo-que-crees" id="toc-linux-hoy-más-presente-de-lo-que-crees" class="nav-link" data-scroll-target="#linux-hoy-más-presente-de-lo-que-crees">Linux hoy: más presente de lo que crees</a></li>
+  <li><a href="#por-qué-instalar-linux-en-laptops-viejas" id="toc-por-qué-instalar-linux-en-laptops-viejas" class="nav-link" data-scroll-target="#por-qué-instalar-linux-en-laptops-viejas">¿Por qué instalar Linux en laptops viejas?</a>
+  <ul class="collapse">
+  <li><a href="#menos-basura-electrónica" id="toc-menos-basura-electrónica" class="nav-link" data-scroll-target="#menos-basura-electrónica">♻️ Menos basura electrónica</a></li>
+  <li><a href="#equipos-para-estudiantes-de-bajos-recursos" id="toc-equipos-para-estudiantes-de-bajos-recursos" class="nav-link" data-scroll-target="#equipos-para-estudiantes-de-bajos-recursos">💻 Equipos para estudiantes de bajos recursos</a></li>
+  <li><a href="#un-banco-de-laptops-prestables" id="toc-un-banco-de-laptops-prestables" class="nav-link" data-scroll-target="#un-banco-de-laptops-prestables">🎒 Un banco de laptops prestables</a></li>
+  </ul></li>
+  <li><a href="#el-argumento-completo" id="toc-el-argumento-completo" class="nav-link" data-scroll-target="#el-argumento-completo">El argumento completo</a></li>
   </ul>
 </nav>
     </div>
@@ -148,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">🔍 Elige tu distribución (distro) de Linux</h1>
+<h1 class="title">🐧 ¿Qué es Linux y por qué importa?</h1>
 </div>
 
 
@@ -181,158 +187,249 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>El rendimiento en Linux no depende tanto de “qué Linux” sino del <strong>entorno de escritorio</strong>, es decir, de cuántos recursos visuales consume. Esta página te ayuda a encontrar la combinación correcta para tu laptop.</p>
+<section id="de-un-proyecto-estudiantil-a-millones-de-computadoras" class="level1 hero-banner">
+<h1>De un proyecto estudiantil a millones de computadoras</h1>
+<p>Linux nació en 1991 de la curiosidad de un estudiante finlandés. Hoy corre en servidores, supercomputadoras, teléfonos Android… y en la laptop vieja que tienes en casa.</p>
+</section>
 <hr>
-<section id="corre-un-quiz-de-distros" class="level2">
-<h2 class="anchored" data-anchor-id="corre-un-quiz-de-distros">1. Corre un quiz de distros</h2>
-<p>Antes de buscar en Google al azar, usa estas herramientas para filtrar opciones según tus preferencias:</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="🧩 DistroChooser — Cuestionario completo (también en español)">
+<section id="un-poco-de-historia" class="level2">
+<h2 class="anchored" data-anchor-id="un-poco-de-historia">Un poco de historia</h2>
+<section id="el-principio-unix-y-la-semilla-libre" class="level3">
+<h3 class="anchored" data-anchor-id="el-principio-unix-y-la-semilla-libre">El principio: Unix y la semilla libre</h3>
+<p>En los años 70, los laboratorios Bell (AT&amp;T) crearon <strong>Unix</strong>, un sistema operativo poderoso y elegante. Las universidades lo adoptaron, los estudiantes lo estudiaron — pero era software propietario: costoso y cerrado.</p>
+<p>En 1983, <strong>Richard Stallman</strong> lanzó el proyecto <strong>GNU</strong> con una idea radical: construir un sistema operativo completamente libre que cualquiera pudiera usar, estudiar, modificar y compartir. Creó también la <strong>Licencia Pública General (GPL)</strong>, el fundamento legal del software libre.</p>
+</section>
+<section id="linus-torvalds-escribe-el-kernel" class="level3">
+<h3 class="anchored" data-anchor-id="linus-torvalds-escribe-el-kernel">1991 — Linus Torvalds escribe el kernel</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="📬 El mensaje que cambió la computación">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>🧩 DistroChooser — Cuestionario completo (también en español)
+<span class="screen-reader-only">Note</span>📬 El mensaje que cambió la computación
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>No analiza tu PC, pero hace preguntas inteligentes sobre tus necesidades y experiencia.</p>
-<p>👉 <a href="https://distrochooser.de/es">distrotest.net/chooser</a></p>
+<p>El 25 de agosto de 1991, Linus Torvalds publicó en un foro de internet:</p>
+<p><em>“Estoy haciendo un sistema operativo libre (solo un hobby, no será grande ni profesional como GNU)…”</em></p>
+<p>Ese “hobby” se convirtió en el <strong>kernel Linux</strong> — el corazón del sistema que hoy alimenta el 96% de los servidores web del mundo.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="🤖 DistroWiz — Quiz con IA">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>🤖 DistroWiz — Quiz con IA
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Quiz rápido para explorar opciones. Útil si quieres algo más conversacional.</p>
-<p>👉 <a href="https://distrowiz.com">distrowiz.com</a></p>
-</div>
-</div>
+<p>GNU tenía todas las herramientas, pero le faltaba el núcleo. Linux tenía el núcleo. Juntos formaron <strong>GNU/Linux</strong>: un sistema operativo completo, libre y gratuito.</p>
+</section>
+<section id="la-explosión-de-las-distribuciones" class="level3">
+<h3 class="anchored" data-anchor-id="la-explosión-de-las-distribuciones">La explosión de las distribuciones</h3>
+<p>Con el código abierto y disponible, comunidades de todo el mundo empezaron a empaquetar Linux de formas diferentes — cada una con distintos objetivos, entornos y públicos. A esas versiones se les llama <strong>distribuciones</strong> (o “distros”). Hoy existen cientos.</p>
 <hr>
 </section>
-<section id="prueba-distros-sin-instalar-nada" class="level2">
-<h2 class="anchored" data-anchor-id="prueba-distros-sin-instalar-nada">2. Prueba distros sin instalar nada</h2>
-<p>Antes de formatear tu laptop, puedes <strong>probar la distro en el navegador</strong> Esta página te permite ver cómo se vería la distro de linux cuando la instales en tu computadora:</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled" title="🌐 DistroSea — Test-drive en la nube">
+</section>
+<section id="la-filosofía-detrás-de-linux" class="level2">
+<h2 class="anchored" data-anchor-id="la-filosofía-detrás-de-linux">La filosofía detrás de Linux</h2>
+<p>Linux no es solo software: es una forma de pensar sobre quién debería controlar la tecnología.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Las 4 libertades del software libre (Richard Stallman)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>🌐 DistroSea — Test-drive en la nube
+<span class="screen-reader-only">Tip</span>Las 4 libertades del software libre (Richard Stallman)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Permite correr distros completas desde el navegador. Excelente para ver si el entorno te convence antes de comprometer tu USB.</p>
-<p>👉 <a href="https://distrosea.com">distrosea.com</a></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="filtra-según-tu-hardware" class="level2">
-<h2 class="anchored" data-anchor-id="filtra-según-tu-hardware">3. Filtra según tu hardware</h2>
-<p>Las limitantes de las distribuiciones no son tanto el nombre o la marca, sino el <strong>entorno de escritorio</strong> que usan y por lo tanto los recurso que usan.</p>
-<p>Con la lista del quiz en mano, filtra usando la RAM y tipo de disco de tu laptop:</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 40%">
-<col style="width: 60%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Tu RAM</th>
-<th>Qué buscar</th>
+<th>#</th>
+<th>Libertad</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>≤ 2 GB</td>
-<td>antiX, Puppy Linux, Alpine, distros con window managers ligeros</td>
+<td>0</td>
+<td><strong>Usar</strong> el programa para cualquier propósito</td>
 </tr>
 <tr class="even">
-<td>4 GB</td>
-<td>Entornos XFCE o LXQt; <strong>evita GNOME</strong> si quieres fluidez</td>
+<td>1</td>
+<td><strong>Estudiar</strong> cómo funciona y adaptarlo</td>
 </tr>
 <tr class="odd">
-<td>8 GB+</td>
-<td>Casi cualquier distro; elige por gusto y uso</td>
+<td>2</td>
+<td><strong>Redistribuir</strong> copias</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><strong>Mejorar</strong> el programa y publicar las mejoras</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-important callout-titled" title="SSD vs HDD importa mucho">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>SSD vs HDD importa mucho
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Si tu laptop tiene <strong>disco duro mecánico (HDD)</strong>, cualquier distro se sentirá lenta comparada con un SSD. Si puedes, considera cambiar a SSD antes de instalar.</p>
-</div>
-</div>
+<p>Estas libertades tienen consecuencias prácticas enormes:</p>
+<ul>
+<li><strong>Nadie te puede quitar el acceso</strong> por vencer una licencia.</li>
+<li><strong>Nadie recopila tus datos</strong> para venderlos.</li>
+<li><strong>Cualquier persona en el mundo puede mejorar el código</strong> — y lo hace. Miles de programadores contribuyen a Linux de forma voluntaria o dentro de empresas como Red Hat, Google, IBM o Canonical.</li>
+<li><strong>No hay fecha de caducidad arbitraria.</strong> Windows 10 dejó de recibir soporte en 2025; Linux no tiene ese problema.</li>
+</ul>
 <hr>
 </section>
-<section id="distros-recomendadas-según-tu-perfil" class="level2">
-<h2 class="anchored" data-anchor-id="distros-recomendadas-según-tu-perfil">4. Distros recomendadas según tu perfil</h2>
-<section id="perfil-1-laptop-normal" class="level3 profile-green">
-<h3 class="profile-green anchored" data-anchor-id="perfil-1-laptop-normal">🟢 Perfil 1 — Laptop “normal”</h3>
+<section id="linux-hoy-más-presente-de-lo-que-crees" class="level2">
+<h2 class="anchored" data-anchor-id="linux-hoy-más-presente-de-lo-que-crees">Linux hoy: más presente de lo que crees</h2>
+<p>Es probable que ya uses Linux sin saberlo:</p>
+<pre><code>Android        → basado en el kernel Linux
+Servidores web → ~96% corren Linux (Apache, Nginx…)
+Supercomputadoras → top 500 del mundo: 100% Linux
+Smart TVs, routers, cajeros automáticos, autos Tesla…</code></pre>
+<p>Lo que no domina — todavía — es el escritorio personal. Pero eso está cambiando, especialmente en educación y en contextos donde los recursos son limitados.</p>
+<hr>
+</section>
+<section id="por-qué-instalar-linux-en-laptops-viejas" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-instalar-linux-en-laptops-viejas">¿Por qué instalar Linux en laptops viejas?</h2>
+<p>Aquí es donde la filosofía se vuelve práctica. Rescatar una laptop vieja con Linux no es solo una solución técnica — tiene implicaciones sociales y ambientales reales.</p>
+<hr>
+<section id="menos-basura-electrónica" class="level3">
+<h3 class="anchored" data-anchor-id="menos-basura-electrónica">♻️ Menos basura electrónica</h3>
 <div class="profile-card profile-green">
-<p><strong>Tienes:</strong> 8 GB RAM o más, SSD, laptop 2015 o más reciente</p>
-<p>✅ <strong>Linux Mint (Cinnamon)</strong> o <strong>Ubuntu LTS</strong></p>
-<ul>
-<li>Mint se siente más familiar si vienes de Windows.</li>
-<li>Ubuntu tiene mucha documentación y soporte comunitario.</li>
-</ul>
+<p>Los desechos electrónicos (e-waste) son el tipo de residuo de más rápido crecimiento en el mundo. Una laptop contiene metales como plomo, mercurio y cadmio que contaminan suelos y agua cuando terminan en basureros.</p>
+<p><strong>Instalar Linux puede extender la vida útil de una laptop entre 5 y 10 años adicionales.</strong> Una máquina que “ya no sirve para Windows 11” puede correr Linux perfectamente durante años más.</p>
 </div>
+<p>Hay laptops del año 2010–2015 que con una distro ligera como Lubuntu o Xubuntu:</p>
+<ul>
+<li>Navegan en internet sin problemas.</li>
+<li>Reproducen video en HD.</li>
+<li>Corren herramientas de oficina, programación y diseño básico.</li>
+<li>Sirven perfectamente para estudiar, escribir y aprender.</li>
+</ul>
+<hr>
 </section>
-<section id="perfil-2-laptop-limitada" class="level3 profile-yellow">
-<h3 class="profile-yellow anchored" data-anchor-id="perfil-2-laptop-limitada">🟡 Perfil 2 — Laptop “limitada”</h3>
+<section id="equipos-para-estudiantes-de-bajos-recursos" class="level3">
+<h3 class="anchored" data-anchor-id="equipos-para-estudiantes-de-bajos-recursos">💻 Equipos para estudiantes de bajos recursos</h3>
 <div class="profile-card profile-yellow">
-<p><strong>Tienes:</strong> 4 GB RAM o disco duro mecánico (HDD), laptop vieja</p>
-<p>✅ <strong>Xubuntu (XFCE)</strong> o <strong>Linux Mint XFCE</strong></p>
-<ul>
-<li>Más ligero, muy estable, suficiente para uso académico.</li>
-</ul>
+<p>No todos los estudiantes tienen acceso a una laptop nueva. Una computadora vieja rescatada con Linux puede ser <strong>la diferencia entre tener o no tener herramientas digitales</strong> para estudiar, hacer tareas o aprender a programar.</p>
 </div>
-</section>
-<section id="perfil-3-laptop-muy-vieja" class="level3 profile-red">
-<h3 class="profile-red anchored" data-anchor-id="perfil-3-laptop-muy-vieja">🔴 Perfil 3 — Laptop muy vieja</h3>
-<div class="profile-card profile-red">
-<p><strong>Tienes:</strong> 2 GB RAM o menos</p>
-<p>✅ <strong>Lubuntu (LXQt)</strong></p>
-<ul>
-<li>La opción más ligera de las “mainstream”.</li>
-<li>Aún puede ir lento si el disco es HDD viejo.</li>
-</ul>
-</div>
+<p>El costo de esta solución es prácticamente cero:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Concepto</th>
+<th>Costo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Linux (cualquier distro)</td>
+<td>Gratis</td>
+</tr>
+<tr class="even">
+<td>LibreOffice (suite de oficina)</td>
+<td>Gratis</td>
+</tr>
+<tr class="odd">
+<td>Navegador web (Firefox)</td>
+<td>Gratis</td>
+</tr>
+<tr class="even">
+<td>Editor de código (VS Code, Gedit)</td>
+<td>Gratis</td>
+</tr>
+<tr class="odd">
+<td>Laptop vieja de segunda mano</td>
+<td>$300–$800 MXN</td>
+</tr>
+</tbody>
+</table>
+<p>Con una inversión mínima (o ninguna, si la laptop ya existe), se puede equipar a un estudiante con todas las herramientas que necesita.</p>
 <hr>
 </section>
-</section>
-<section id="regla-rápida" class="level2">
-<h2 class="anchored" data-anchor-id="regla-rápida">Regla rápida</h2>
-<pre><code>8 GB+  → Linux Mint Cinnamon / Ubuntu
-4 GB   → Xubuntu / Mint XFCE
-≤ 2 GB → Lubuntu</code></pre>
-<hr>
-<div class="callout callout-style-default callout-tip no-icon callout-titled" title="¿Ya tienes tu distro? 👉">
+<section id="un-banco-de-laptops-prestables" class="level3">
+<h3 class="anchored" data-anchor-id="un-banco-de-laptops-prestables">🎒 Un banco de laptops prestables</h3>
+<p>La idea es simple y ya funciona en muchas escuelas y comunidades:</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="🏫 Cómo funciona un banco de laptops con Linux">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>¿Ya tienes tu distro? 👉
+<span class="screen-reader-only">Note</span>🏫 Cómo funciona un banco de laptops con Linux
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Continúa con <strong><a href="./crea-usb.html">💾 Crea tu USB</a></strong></p>
+<ol type="1">
+<li><strong>Recolectar</strong> laptops viejas donadas por familias, empresas o instituciones.</li>
+<li><strong>Evaluar</strong> hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.</li>
+<li><strong>Instalar</strong> una distro ligera (Lubuntu, Xubuntu o Mint XFCE).</li>
+<li><strong>Configurar</strong> con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.</li>
+<li><strong>Prestar</strong> la laptop a estudiantes que la necesiten durante el semestre.</li>
+<li><strong>Recuperar, limpiar y reutilizar</strong> al terminar el periodo.</li>
+</ol>
+</div>
+</div>
+<p>Linux facilita esto de forma especial: como no hay licencias que administrar, puedes clonar la misma configuración en decenas de laptops sin costo adicional. Herramientas como <strong>Clonezilla</strong> permiten copiar la instalación completa de una laptop a otra en minutos.</p>
+<hr>
+</section>
+</section>
+<section id="el-argumento-completo" class="level2">
+<h2 class="anchored" data-anchor-id="el-argumento-completo">El argumento completo</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="¿Por qué Linux en laptops viejas tiene sentido?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>¿Por qué Linux en laptops viejas tiene sentido?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimensión</th>
+<th>Impacto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🌱 <strong>Ambiental</strong></td>
+<td>Reduce basura electrónica; extiende vida útil de hardware</td>
+</tr>
+<tr class="even">
+<td>💰 <strong>Económico</strong></td>
+<td>Cero costo de software; hardware de segunda mano accesible</td>
+</tr>
+<tr class="odd">
+<td>📚 <strong>Educativo</strong></td>
+<td>Da acceso a herramientas digitales a estudiantes sin recursos</td>
+</tr>
+<tr class="even">
+<td>🔓 <strong>Tecnológico</strong></td>
+<td>Software libre, sin licencias caducadas ni suscripciones</td>
+</tr>
+<tr class="odd">
+<td>🤝 <strong>Comunitario</strong></td>
+<td>Permite crear bancos de préstamo sostenibles y replicables</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Una laptop vieja no es basura. Es una oportunidad.</p>
+<hr>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="¿Lista para empezar? 👉">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>¿Lista para empezar? 👉
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ve a <strong><a href="./elige-distro.html">🔍 Elige tu distro</a></strong> para encontrar el Linux adecuado para tu laptop.</p>
 </div>
 </div>
 

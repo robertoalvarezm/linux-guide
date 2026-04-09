@@ -14,13 +14,15 @@ website:
     left:
       - href: index.qmd
         text: "🏠 Inicio"
+      - href: que-es-linux.qmd
+        text: "💡 ¿Qué es Linux?"
       - href: elige-distro.qmd
         text: "🔍 Elige tu Distro"
       - href: crea-usb.qmd
         text: "💾 Crea tu USB"
       - href: instalacion.qmd
-        text: "⚙️ Instalación"
-  page-footer:
+        text: "⚙️ Instalación"  
+page-footer:
     center: "Guía para estudiantes · Linux en laptops viejas"
     background: "#2d3a4a"
 

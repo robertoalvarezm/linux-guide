@@ -49,32 +49,46 @@
     "text": "¿Algo salió mal?\n\n\n\n\n\n\n\nProblema\nSolución probable\n\n\n\n\nLa laptop no arranca desde la USB\nVerifica que la tecla de Boot Menu sea la correcta; intenta desactivar Secure Boot\n\n\nWi-Fi no funciona en el live\nAlgunos adaptadores necesitan drivers propietarios; instálalos después\n\n\nEl instalador no ve el disco\nTu disco puede estar en modo RAID/RST (Intel); busca cómo desactivarlo en BIOS\n\n\nPantalla negra al arrancar\nPrueba agregar nomodeset en las opciones de arranque de GRUB\n\n\n\n\n\n\n\n\n\n\nTip🎉 ¡Listo!\n\n\n\nSi llegaste aquí, ya tienes Linux funcionando. Cualquier duda, la comunidad de tu distro tiene foros muy activos en español."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "🐧 Linux en laptops viejas",
+    "objectID": "que-es-linux.html",
+    "href": "que-es-linux.html",
+    "title": "🐧 ¿Qué es Linux y por qué importa?",
     "section": "",
-    "text": "Guía paso a paso para estudiantes — desde elegir tu distribución hasta arrancar por primera vez."
+    "text": "Linux nació en 1991 de la curiosidad de un estudiante finlandés. Hoy corre en servidores, supercomputadoras, teléfonos Android… y en la laptop vieja que tienes en casa."
   },
   {
-    "objectID": "index.html#por-qué-instalar-linux",
-    "href": "index.html#por-qué-instalar-linux",
-    "title": "🐧 Linux en laptops viejas",
-    "section": "¿Por qué instalar Linux?",
-    "text": "¿Por qué instalar Linux?\nLinux puede revivir una laptop vieja que ya no corre Windows con fluidez. El secreto está en elegir la distribución correcta para tu hardware específico.\nEsta guía tiene 3 pasos:\n\n\n\nPaso\nQué harás\n\n\n\n\n🔍 Elige tu distro\nDescubre qué distribución va con tu laptop\n\n\n💾 Crea tu USB\nDescarga la ISO y prepara la USB de instalación\n\n\n⚙️ Instalación\nArranca desde la USB e instala Linux"
+    "objectID": "que-es-linux.html#un-poco-de-historia",
+    "href": "que-es-linux.html#un-poco-de-historia",
+    "title": "🐧 ¿Qué es Linux y por qué importa?",
+    "section": "Un poco de historia",
+    "text": "Un poco de historia\n\nEl principio: Unix y la semilla libre\nEn los años 70, los laboratorios Bell (AT&T) crearon Unix, un sistema operativo poderoso y elegante. Las universidades lo adoptaron, los estudiantes lo estudiaron — pero era software propietario: costoso y cerrado.\nEn 1983, Richard Stallman lanzó el proyecto GNU con una idea radical: construir un sistema operativo completamente libre que cualquiera pudiera usar, estudiar, modificar y compartir. Creó también la Licencia Pública General (GPL), el fundamento legal del software libre.\n\n\n1991 — Linus Torvalds escribe el kernel\n\n\n\n\n\n\nNote📬 El mensaje que cambió la computación\n\n\n\nEl 25 de agosto de 1991, Linus Torvalds publicó en un foro de internet:\n“Estoy haciendo un sistema operativo libre (solo un hobby, no será grande ni profesional como GNU)…”\nEse “hobby” se convirtió en el kernel Linux — el corazón del sistema que hoy alimenta el 96% de los servidores web del mundo.\n\n\nGNU tenía todas las herramientas, pero le faltaba el núcleo. Linux tenía el núcleo. Juntos formaron GNU/Linux: un sistema operativo completo, libre y gratuito.\n\n\nLa explosión de las distribuciones\nCon el código abierto y disponible, comunidades de todo el mundo empezaron a empaquetar Linux de formas diferentes — cada una con distintos objetivos, entornos y públicos. A esas versiones se les llama distribuciones (o “distros”). Hoy existen cientos."
   },
   {
-    "objectID": "index.html#checklist-antes-de-empezar",
-    "href": "index.html#checklist-antes-de-empezar",
-    "title": "🐧 Linux en laptops viejas",
-    "section": "✅ Checklist antes de empezar",
-    "text": "✅ Checklist antes de empezar\nAntes de cualquier otra cosa, asegúrate de tener esto listo:\n\n\n\n\n\n\nWarning⚠️ Haz esto PRIMERO — 5 min que te ahorran horas\n\n\n\n\nRespaldaste todo lo importante: Documentos, Escritorio, Descargas, Proyectos.\n\nSi usas Windows: verifica que OneDrive / Google Drive estén sincronizados.\n\nCargador conectado durante toda la instalación.\nUSB de 8 GB o más disponible (se borrará completa).\nConexión a internet disponible (idealmente Wi-Fi estable)."
+    "objectID": "que-es-linux.html#la-filosofía-detrás-de-linux",
+    "href": "que-es-linux.html#la-filosofía-detrás-de-linux",
+    "title": "🐧 ¿Qué es Linux y por qué importa?",
+    "section": "La filosofía detrás de Linux",
+    "text": "La filosofía detrás de Linux\nLinux no es solo software: es una forma de pensar sobre quién debería controlar la tecnología.\n\n\n\n\n\n\nTipLas 4 libertades del software libre (Richard Stallman)\n\n\n\n\n\n\n#\nLibertad\n\n\n\n\n0\nUsar el programa para cualquier propósito\n\n\n1\nEstudiar cómo funciona y adaptarlo\n\n\n2\nRedistribuir copias\n\n\n3\nMejorar el programa y publicar las mejoras\n\n\n\n\n\nEstas libertades tienen consecuencias prácticas enormes:\n\nNadie te puede quitar el acceso por vencer una licencia.\nNadie recopila tus datos para venderlos.\nCualquier persona en el mundo puede mejorar el código — y lo hace. Miles de programadores contribuyen a Linux de forma voluntaria o dentro de empresas como Red Hat, Google, IBM o Canonical.\nNo hay fecha de caducidad arbitraria. Windows 10 dejó de recibir soporte en 2025; Linux no tiene ese problema."
   },
   {
-    "objectID": "index.html#decide-tu-modo-de-instalación",
-    "href": "index.html#decide-tu-modo-de-instalación",
-    "title": "🐧 Linux en laptops viejas",
-    "section": "🗂️ Decide tu modo de instalación",
-    "text": "🗂️ Decide tu modo de instalación\nAntes de continuar, decide qué quieres hacer:\n\n\n\n\n\n\nNoteOpción A — Dual Boot (Windows + Linux)\n\n\n\nMantiene Windows y agrega Linux. Recomendado si necesitas Windows para algo específico.\n\n\n\n\n\n\n\n\nTipOpción B — Reemplazar Windows por Linux\n\n\n\nBorra todo y solo queda Linux. Úsala solo si ya estás segurx.\n\n\n\n\n\n\n\n\nImportantOpción C — Probar sin instalar (Live USB)\n\n\n\nArranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi, teclado y pantalla funcionen antes de comprometerte.\n\n\n\n\n\n\n\n\n\nTip¿Por dónde empiezo?\n\n\n\n👉 Ve a 🔍 Elige tu distro para empezar."
+    "objectID": "que-es-linux.html#linux-hoy-más-presente-de-lo-que-crees",
+    "href": "que-es-linux.html#linux-hoy-más-presente-de-lo-que-crees",
+    "title": "🐧 ¿Qué es Linux y por qué importa?",
+    "section": "Linux hoy: más presente de lo que crees",
+    "text": "Linux hoy: más presente de lo que crees\nEs probable que ya uses Linux sin saberlo:\nAndroid        → basado en el kernel Linux\nServidores web → ~96% corren Linux (Apache, Nginx…)\nSupercomputadoras → top 500 del mundo: 100% Linux\nSmart TVs, routers, cajeros automáticos, autos Tesla…\nLo que no domina — todavía — es el escritorio personal. Pero eso está cambiando, especialmente en educación y en contextos donde los recursos son limitados."
+  },
+  {
+    "objectID": "que-es-linux.html#por-qué-instalar-linux-en-laptops-viejas",
+    "href": "que-es-linux.html#por-qué-instalar-linux-en-laptops-viejas",
+    "title": "🐧 ¿Qué es Linux y por qué importa?",
+    "section": "¿Por qué instalar Linux en laptops viejas?",
+    "text": "¿Por qué instalar Linux en laptops viejas?\nAquí es donde la filosofía se vuelve práctica. Rescatar una laptop vieja con Linux no es solo una solución técnica — tiene implicaciones sociales y ambientales reales.\n\n\n♻️ Menos basura electrónica\n\nLos desechos electrónicos (e-waste) son el tipo de residuo de más rápido crecimiento en el mundo. Una laptop contiene metales como plomo, mercurio y cadmio que contaminan suelos y agua cuando terminan en basureros.\nInstalar Linux puede extender la vida útil de una laptop entre 5 y 10 años adicionales. Una máquina que “ya no sirve para Windows 11” puede correr Linux perfectamente durante años más.\n\nHay laptops del año 2010–2015 que con una distro ligera como Lubuntu o Xubuntu:\n\nNavegan en internet sin problemas.\nReproducen video en HD.\nCorren herramientas de oficina, programación y diseño básico.\nSirven perfectamente para estudiar, escribir y aprender.\n\n\n\n\n💻 Equipos para estudiantes de bajos recursos\n\nNo todos los estudiantes tienen acceso a una laptop nueva. Una computadora vieja rescatada con Linux puede ser la diferencia entre tener o no tener herramientas digitales para estudiar, hacer tareas o aprender a programar.\n\nEl costo de esta solución es prácticamente cero:\n\n\n\nConcepto\nCosto\n\n\n\n\nLinux (cualquier distro)\nGratis\n\n\nLibreOffice (suite de oficina)\nGratis\n\n\nNavegador web (Firefox)\nGratis\n\n\nEditor de código (VS Code, Gedit)\nGratis\n\n\nLaptop vieja de segunda mano\n$300–$800 MXN\n\n\n\nCon una inversión mínima (o ninguna, si la laptop ya existe), se puede equipar a un estudiante con todas las herramientas que necesita.\n\n\n\n🎒 Un banco de laptops prestables\nLa idea es simple y ya funciona en muchas escuelas y comunidades:\n\n\n\n\n\n\nNote🏫 Cómo funciona un banco de laptops con Linux\n\n\n\n\nRecolectar laptops viejas donadas por familias, empresas o instituciones.\nEvaluar hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.\nInstalar una distro ligera (Lubuntu, Xubuntu o Mint XFCE).\nConfigurar con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.\nPrestar la laptop a estudiantes que la necesiten durante el semestre.\nRecuperar, limpiar y reutilizar al terminar el periodo.\n\n\n\nLinux facilita esto de forma especial: como no hay licencias que administrar, puedes clonar la misma configuración en decenas de laptops sin costo adicional. Herramientas como Clonezilla permiten copiar la instalación completa de una laptop a otra en minutos."
+  },
+  {
+    "objectID": "que-es-linux.html#el-argumento-completo",
+    "href": "que-es-linux.html#el-argumento-completo",
+    "title": "🐧 ¿Qué es Linux y por qué importa?",
+    "section": "El argumento completo",
+    "text": "El argumento completo\n\n\n\n\n\n\nTip¿Por qué Linux en laptops viejas tiene sentido?\n\n\n\n\n\n\n\n\n\n\nDimensión\nImpacto\n\n\n\n\n🌱 Ambiental\nReduce basura electrónica; extiende vida útil de hardware\n\n\n💰 Económico\nCero costo de software; hardware de segunda mano accesible\n\n\n📚 Educativo\nDa acceso a herramientas digitales a estudiantes sin recursos\n\n\n🔓 Tecnológico\nSoftware libre, sin licencias caducadas ni suscripciones\n\n\n🤝 Comunitario\nPermite crear bancos de préstamo sostenibles y replicables\n\n\n\n\n\nUna laptop vieja no es basura. Es una oportunidad.\n\n\n\n\n\n\n\nTip¿Lista para empezar? 👉\n\n\n\nVe a 🔍 Elige tu distro para encontrar el Linux adecuado para tu laptop."
   },
   {
     "objectID": "elige-distro.html",
@@ -117,6 +131,34 @@
     "title": "🔍 Elige tu distribución (distro) de Linux",
     "section": "Regla rápida",
     "text": "Regla rápida\n8 GB+  → Linux Mint Cinnamon / Ubuntu\n4 GB   → Xubuntu / Mint XFCE\n≤ 2 GB → Lubuntu\n\n\n\n\n\n\n\nTip¿Ya tienes tu distro? 👉\n\n\n\nContinúa con 💾 Crea tu USB"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "",
+    "text": "Guía paso a paso para estudiantes — desde elegir tu distribución hasta arrancar por primera vez."
+  },
+  {
+    "objectID": "index.html#por-qué-instalar-linux",
+    "href": "index.html#por-qué-instalar-linux",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "¿Por qué instalar Linux?",
+    "text": "¿Por qué instalar Linux?\nLinux puede revivir una laptop vieja que ya no corre Windows con fluidez. El secreto está en elegir la distribución correcta para tu hardware específico.\nEsta guía tiene 3 pasos:\n\n\n\nPaso\nQué harás\n\n\n\n\n🔍 Elige tu distro\nDescubre qué distribución va con tu laptop\n\n\n💾 Crea tu USB\nDescarga la ISO y prepara la USB de instalación\n\n\n⚙️ Instalación\nArranca desde la USB e instala Linux"
+  },
+  {
+    "objectID": "index.html#checklist-antes-de-empezar",
+    "href": "index.html#checklist-antes-de-empezar",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "✅ Checklist antes de empezar",
+    "text": "✅ Checklist antes de empezar\nAntes de cualquier otra cosa, asegúrate de tener esto listo:\n\n\n\n\n\n\nWarning⚠️ Haz esto PRIMERO — 5 min que te ahorran horas\n\n\n\n\nRespaldaste todo lo importante: Documentos, Escritorio, Descargas, Proyectos.\n\nSi usas Windows: verifica que OneDrive / Google Drive estén sincronizados.\n\nCargador conectado durante toda la instalación.\nUSB de 8 GB o más disponible (se borrará completa).\nConexión a internet disponible (idealmente Wi-Fi estable)."
+  },
+  {
+    "objectID": "index.html#decide-tu-modo-de-instalación",
+    "href": "index.html#decide-tu-modo-de-instalación",
+    "title": "🐧 Linux en laptops viejas",
+    "section": "🗂️ Decide tu modo de instalación",
+    "text": "🗂️ Decide tu modo de instalación\nAntes de continuar, decide qué quieres hacer:\n\n\n\n\n\n\nNoteOpción A — Dual Boot (Windows + Linux)\n\n\n\nMantiene Windows y agrega Linux. Recomendado si necesitas Windows para algo específico.\n\n\n\n\n\n\n\n\nTipOpción B — Reemplazar Windows por Linux\n\n\n\nBorra todo y solo queda Linux. Úsala solo si ya estás segurx.\n\n\n\n\n\n\n\n\nImportantOpción C — Probar sin instalar (Live USB)\n\n\n\nArranca Linux desde la USB sin tocar tu disco duro. Ideal para revisar que Wi-Fi, teclado y pantalla funcionen antes de comprometerte.\n\n\n\n\n\n\n\n\n\nTip¿Por dónde empiezo?\n\n\n\n👉 Ve a 🔍 Elige tu distro para empezar."
   },
   {
     "objectID": "crea-usb.html",

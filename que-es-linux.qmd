@@ -1,0 +1,156 @@
+---
+title: "🐧 ¿Qué es Linux y por qué importa?"
+---
+
+::: {.hero-banner}
+# De un proyecto estudiantil a millones de computadoras
+
+Linux nació en 1991 de la curiosidad de un estudiante finlandés. Hoy corre en servidores, supercomputadoras, teléfonos Android... y en la laptop vieja que tienes en casa.
+:::
+
+---
+
+## Un poco de historia
+
+### El principio: Unix y la semilla libre
+
+En los años 70, los laboratorios Bell (AT&T) crearon **Unix**, un sistema operativo poderoso y elegante. Las universidades lo adoptaron, los estudiantes lo estudiaron — pero era software propietario: costoso y cerrado.
+
+En 1983, **Richard Stallman** lanzó el proyecto **GNU** con una idea radical: construir un sistema operativo completamente libre que cualquiera pudiera usar, estudiar, modificar y compartir. Creó también la **Licencia Pública General (GPL)**, el fundamento legal del software libre.
+
+### 1991 — Linus Torvalds escribe el kernel
+
+::: {.callout-note icon="false" title="📬 El mensaje que cambió la computación"}
+El 25 de agosto de 1991, Linus Torvalds publicó en un foro de internet:
+
+*"Estoy haciendo un sistema operativo libre (solo un hobby, no será grande ni profesional como GNU)..."*
+
+Ese "hobby" se convirtió en el **kernel Linux** — el corazón del sistema que hoy alimenta el 96% de los servidores web del mundo.
+:::
+
+GNU tenía todas las herramientas, pero le faltaba el núcleo. Linux tenía el núcleo. Juntos formaron **GNU/Linux**: un sistema operativo completo, libre y gratuito.
+
+### La explosión de las distribuciones
+
+Con el código abierto y disponible, comunidades de todo el mundo empezaron a empaquetar Linux de formas diferentes — cada una con distintos objetivos, entornos y públicos. A esas versiones se les llama **distribuciones** (o "distros"). Hoy existen cientos.
+
+---
+
+## La filosofía detrás de Linux
+
+Linux no es solo software: es una forma de pensar sobre quién debería controlar la tecnología.
+
+::: {.callout-tip icon="false" title="Las 4 libertades del software libre (Richard Stallman)"}
+| # | Libertad |
+|---|----------|
+| 0 | **Usar** el programa para cualquier propósito |
+| 1 | **Estudiar** cómo funciona y adaptarlo |
+| 2 | **Redistribuir** copias |
+| 3 | **Mejorar** el programa y publicar las mejoras |
+:::
+
+Estas libertades tienen consecuencias prácticas enormes:
+
+- **Nadie te puede quitar el acceso** por vencer una licencia.
+- **Nadie recopila tus datos** para venderlos.
+- **Cualquier persona en el mundo puede mejorar el código** — y lo hace. Miles de programadores contribuyen a Linux de forma voluntaria o dentro de empresas como Red Hat, Google, IBM o Canonical.
+- **No hay fecha de caducidad arbitraria.** Windows 10 dejó de recibir soporte en 2025; Linux no tiene ese problema.
+
+---
+
+## Linux hoy: más presente de lo que crees
+
+Es probable que ya uses Linux sin saberlo:
+
+```
+Android        → basado en el kernel Linux
+Servidores web → ~96% corren Linux (Apache, Nginx…)
+Supercomputadoras → top 500 del mundo: 100% Linux
+Smart TVs, routers, cajeros automáticos, autos Tesla…
+```
+
+Lo que no domina — todavía — es el escritorio personal. Pero eso está cambiando, especialmente en educación y en contextos donde los recursos son limitados.
+
+---
+
+## ¿Por qué instalar Linux en laptops viejas?
+
+Aquí es donde la filosofía se vuelve práctica. Rescatar una laptop vieja con Linux no es solo una solución técnica — tiene implicaciones sociales y ambientales reales.
+
+---
+
+### ♻️ Menos basura electrónica
+
+::: {.profile-card .profile-green}
+Los desechos electrónicos (e-waste) son el tipo de residuo de más rápido crecimiento en el mundo. Una laptop contiene metales como plomo, mercurio y cadmio que contaminan suelos y agua cuando terminan en basureros.
+
+**Instalar Linux puede extender la vida útil de una laptop entre 5 y 10 años adicionales.** Una máquina que "ya no sirve para Windows 11" puede correr Linux perfectamente durante años más.
+:::
+
+Hay laptops del año 2010–2015 que con una distro ligera como Lubuntu o Xubuntu:
+
+- Navegan en internet sin problemas.
+- Reproducen video en HD.
+- Corren herramientas de oficina, programación y diseño básico.
+- Sirven perfectamente para estudiar, escribir y aprender.
+
+---
+
+### 💻 Equipos para estudiantes de bajos recursos
+
+::: {.profile-card .profile-yellow}
+No todos los estudiantes tienen acceso a una laptop nueva. Una computadora vieja rescatada con Linux puede ser **la diferencia entre tener o no tener herramientas digitales** para estudiar, hacer tareas o aprender a programar.
+:::
+
+El costo de esta solución es prácticamente cero:
+
+| Concepto | Costo |
+|----------|-------|
+| Linux (cualquier distro) | Gratis |
+| LibreOffice (suite de oficina) | Gratis |
+| Navegador web (Firefox) | Gratis |
+| Editor de código (VS Code, Gedit) | Gratis |
+| Laptop vieja de segunda mano | $300–$800 MXN |
+
+Con una inversión mínima (o ninguna, si la laptop ya existe), se puede equipar a un estudiante con todas las herramientas que necesita.
+
+---
+
+### 🎒 Un banco de laptops prestables
+
+La idea es simple y ya funciona en muchas escuelas y comunidades:
+
+::: {.callout-note icon="false" title="🏫 Cómo funciona un banco de laptops con Linux"}
+1. **Recolectar** laptops viejas donadas por familias, empresas o instituciones.
+2. **Evaluar** hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.
+3. **Instalar** una distro ligera (Lubuntu, Xubuntu o Mint XFCE).
+4. **Configurar** con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.
+5. **Prestar** la laptop a estudiantes que la necesiten durante el semestre.
+6. **Recuperar, limpiar y reutilizar** al terminar el periodo.
+:::
+
+Linux facilita esto de forma especial: como no hay licencias que administrar, puedes clonar la misma configuración en decenas de laptops sin costo adicional. Herramientas como **Clonezilla** permiten copiar la instalación completa de una laptop a otra en minutos.
+
+---
+
+## El argumento completo
+
+::: {.callout-tip icon="false" title="¿Por qué Linux en laptops viejas tiene sentido?"}
+
+| Dimensión | Impacto |
+|-----------|---------|
+| 🌱 **Ambiental** | Reduce basura electrónica; extiende vida útil de hardware |
+| 💰 **Económico** | Cero costo de software; hardware de segunda mano accesible |
+| 📚 **Educativo** | Da acceso a herramientas digitales a estudiantes sin recursos |
+| 🔓 **Tecnológico** | Software libre, sin licencias caducadas ni suscripciones |
+| 🤝 **Comunitario** | Permite crear bancos de préstamo sostenibles y replicables |
+
+:::
+
+Una laptop vieja no es basura. Es una oportunidad.
+
+---
+
+::: {.callout-tip icon="false" title="¿Lista para empezar? 👉"}
+Ve a **[🔍 Elige tu distro](elige-distro.qmd)** para encontrar el Linux adecuado para tu laptop.
+:::
