@@ -18,7 +18,7 @@ En los años 70, los laboratorios Bell (AT&T) crearon **Unix**, un sistema opera
 
 En 1983, **Richard Stallman** lanzó el proyecto **GNU** con una idea radical: construir un sistema operativo completamente libre que cualquiera pudiera usar, estudiar, modificar y compartir. Creó también la **Licencia Pública General (GPL)**, el fundamento legal del software libre.
 
-![Richard Stallman](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Richard_Stallman_at_Pittsburgh_University.jpg/1920px-Richard_Stallman_at_Pittsburgh_University.jpg){width="858"}
+![Richard Stallman](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Richard_Stallman_at_Pittsburgh_University.jpg/1920px-Richard_Stallman_at_Pittsburgh_University.jpg){fig-align="center" width="296"}
 
 Foto: Wikimedia Commons
 
@@ -34,7 +34,7 @@ El 25 de agosto de 1991, Linus Torvalds publicó en un foro de internet:
 Ese "hobby" se convirtió en el **kernel Linux** — el corazón del sistema que hoy alimenta el 96% de los servidores web del mundo.
 :::
 
-![Linus Torvald](https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg){width="574"}
+![Linus Torvald](https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg){fig-align="center" width="277"}
 
 GNU tenía todas las herramientas, pero le faltaba el núcleo. Linux tenía el núcleo. Juntos formaron **GNU/Linux**: un sistema operativo completo, libre y gratuito.
 
