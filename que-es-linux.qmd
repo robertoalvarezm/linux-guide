@@ -2,13 +2,13 @@
 title: "🐧 ¿Qué es Linux y por qué importa?"
 ---
 
-::: {.hero-banner}
+::: hero-banner
 # De un proyecto estudiantil a millones de computadoras
 
 Linux nació en 1991 de la curiosidad de un estudiante finlandés. Hoy corre en servidores, supercomputadoras, teléfonos Android... y en la laptop vieja que tienes en casa.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Un poco de historia
 
@@ -17,6 +17,12 @@ Linux nació en 1991 de la curiosidad de un estudiante finlandés. Hoy corre en 
 En los años 70, los laboratorios Bell (AT&T) crearon **Unix**, un sistema operativo poderoso y elegante. Las universidades lo adoptaron, los estudiantes lo estudiaron — pero era software propietario: costoso y cerrado.
 
 En 1983, **Richard Stallman** lanzó el proyecto **GNU** con una idea radical: construir un sistema operativo completamente libre que cualquiera pudiera usar, estudiar, modificar y compartir. Creó también la **Licencia Pública General (GPL)**, el fundamento legal del software libre.
+
+![Richard Stallman](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Richard_Stallman_at_Pittsburgh_University.jpg/1920px-Richard_Stallman_at_Pittsburgh_University.jpg)
+
+Foto: Wikimedia Commons
+
+GNU tenía todo lo necesario: compiladores, editores, herramientas de desarrollo... pero le faltaba el núcleo, el "kernel" que hace que el sistema operativo funcione.
 
 ### 1991 — Linus Torvalds escribe el kernel
 
@@ -28,50 +34,54 @@ El 25 de agosto de 1991, Linus Torvalds publicó en un foro de internet:
 Ese "hobby" se convirtió en el **kernel Linux** — el corazón del sistema que hoy alimenta el 96% de los servidores web del mundo.
 :::
 
+![Linus Torvald](https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg)
+
 GNU tenía todas las herramientas, pero le faltaba el núcleo. Linux tenía el núcleo. Juntos formaron **GNU/Linux**: un sistema operativo completo, libre y gratuito.
 
 ### La explosión de las distribuciones
 
 Con el código abierto y disponible, comunidades de todo el mundo empezaron a empaquetar Linux de formas diferentes — cada una con distintos objetivos, entornos y públicos. A esas versiones se les llama **distribuciones** (o "distros"). Hoy existen cientos.
 
----
+------------------------------------------------------------------------
+
+![(Algunas) Distros de linux](https://ubunlog.com/wp-content/uploads/2023/10/distros-linux-novatos-principiantes-imagen-contenido-blog-ubunlog.jpg.webp)
 
 ## La filosofía detrás de Linux
 
 Linux no es solo software: es una forma de pensar sobre quién debería controlar la tecnología.
 
 ::: {.callout-tip icon="false" title="Las 4 libertades del software libre (Richard Stallman)"}
-| # | Libertad |
-|---|----------|
-| 0 | **Usar** el programa para cualquier propósito |
-| 1 | **Estudiar** cómo funciona y adaptarlo |
-| 2 | **Redistribuir** copias |
-| 3 | **Mejorar** el programa y publicar las mejoras |
+| \#  | Libertad                                       |
+|-----|------------------------------------------------|
+| 0   | **Usar** el programa para cualquier propósito  |
+| 1   | **Estudiar** cómo funciona y adaptarlo         |
+| 2   | **Redistribuir** copias                        |
+| 3   | **Mejorar** el programa y publicar las mejoras |
 :::
 
 Estas libertades tienen consecuencias prácticas enormes:
 
-- **Nadie te puede quitar el acceso** por vencer una licencia.
-- **Nadie recopila tus datos** para venderlos.
-- **Cualquier persona en el mundo puede mejorar el código** — y lo hace. Miles de programadores contribuyen a Linux de forma voluntaria o dentro de empresas como Red Hat, Google, IBM o Canonical.
-- **No hay fecha de caducidad arbitraria.** Windows 10 dejó de recibir soporte en 2025; Linux no tiene ese problema.
+-   **Nadie te puede quitar el acceso** por vencer una licencia.
+-   **Nadie recopila tus datos** para venderlos.
+-   **Cualquier persona en el mundo puede mejorar el código** — y lo hace. Miles de programadores contribuyen a Linux de forma voluntaria o dentro de empresas como Red Hat, Google, IBM o Canonical.
+-   **No hay fecha de caducidad arbitraria.** Windows 10 dejó de recibir soporte en 2025; Linux no tiene ese problema.
 
----
+------------------------------------------------------------------------
 
 ## Linux hoy: más presente de lo que crees
 
 Es probable que ya uses Linux sin saberlo:
 
-```
+```         
 Android        → basado en el kernel Linux
 Servidores web → ~96% corren Linux (Apache, Nginx…)
 Supercomputadoras → top 500 del mundo: 100% Linux
 Smart TVs, routers, cajeros automáticos, autos Tesla…
 ```
 
-Lo que no domina — todavía — es el escritorio personal. Pero eso está cambiando, especialmente en educación y en contextos donde los recursos son limitados.
+Lo que no domina, todavía, es el escritorio personal. Pero eso está cambiando, especialmente en educación y en contextos donde los recursos son limitados.
 
----
+------------------------------------------------------------------------
 
 ## 🏛️ ¿Por qué software libre en una universidad pública?
 
@@ -87,26 +97,26 @@ El software libre resuelve esto en tres dimensiones:
 
 El costo de las licencias de software propietario es real y significativo:
 
-| Software | Costo aproximado por equipo/año |
-|----------|---------------------------------|
-| Windows 11 Pro | ~$200–$300 USD |
-| Microsoft 365 (por usuario) | ~$150 USD |
-| Adobe Creative Cloud | ~$600 USD |
-| **Total posible por máquina** | **$900+ USD / año** |
+| Software                      | Costo aproximado por equipo/año |
+|-------------------------------|---------------------------------|
+| Windows 11 Pro                | \~\$200–\$300 USD               |
+| Microsoft 365 (por usuario)   | \~\$150 USD                     |
+| Adobe Creative Cloud          | \~\$600 USD                     |
+| **Total posible por máquina** | **\$900+ USD / año**            |
 
-Con Linux + LibreOffice + GIMP + herramientas libres: **$0**. Ese dinero puede destinarse a infraestructura, becas o más equipos.
+Con Linux + LibreOffice + GIMP + herramientas libres: **\$0**. Ese dinero puede destinarse a infraestructura, becas o más equipos.
 
 ### 🎓 Calidad de primer nivel — sin costo
 
 El software libre no es software de segunda clase. Las herramientas que se usan en producción a nivel mundial son libres y gratuitas:
 
-- **Sistema operativo:** Linux (corre el 96% de los servidores web del mundo)
-- **Suite de oficina:** LibreOffice (compatible con formatos de Microsoft Office)
-- **Navegador:** Firefox (Fundación Mozilla, sin fines de lucro)
-- **Programación:** Python, R, Julia, VS Code, Git — todos gratuitos y de código abierto
-- **Diseño:** GIMP, Inkscape, Blender
-- **Base de datos:** PostgreSQL, MariaDB
-- **Ciencia de datos:** Jupyter, pandas, scikit-learn
+-   **Sistema operativo:** Linux (corre el 96% de los servidores web del mundo)
+-   **Suite de oficina:** LibreOffice (compatible con formatos de Microsoft Office)
+-   **Navegador:** Firefox (Fundación Mozilla, sin fines de lucro)
+-   **Programación:** Python, R, Julia, VS Code, Git — todos gratuitos y de código abierto
+-   **Diseño:** GIMP, Inkscape, Blender
+-   **Base de datos:** PostgreSQL, MariaDB
+-   **Ciencia de datos:** Jupyter, pandas, scikit-learn
 
 Estas son exactamente las herramientas que usan universidades como MIT, Stanford y ETH Zurich. No hay versión "de paga que funciona mejor" — es el mismo software.
 
@@ -118,7 +128,7 @@ Con software libre, la universidad **sabe exactamente qué corre en sus equipos*
 La institución tiene el control — no la empresa.
 :::
 
----
+------------------------------------------------------------------------
 
 ## 🌍 Gobiernos que ya migraron — o están migrando — a Linux
 
@@ -150,15 +160,13 @@ Esta tendencia se enmarca en la creciente inestabilidad e impredecibilidad geopo
 Para una universidad pública, el argumento es exactamente el mismo — solo que a escala institucional.
 :::
 
----
-
-
+------------------------------------------------------------------------
 
 ## ¿Por qué instalar Linux en laptops viejas?
 
 Aquí es donde la filosofía se vuelve práctica. Rescatar una laptop vieja con Linux no es solo una solución técnica — tiene implicaciones sociales y ambientales reales.
 
----
+------------------------------------------------------------------------
 
 ### ♻️ Menos basura electrónica
 
@@ -170,12 +178,12 @@ Los desechos electrónicos (e-waste) son el tipo de residuo de más rápido crec
 
 Hay laptops del año 2010–2015 que con una distro ligera como Lubuntu o Xubuntu:
 
-- Navegan en internet sin problemas.
-- Reproducen video en HD.
-- Corren herramientas de oficina, programación y diseño básico.
-- Sirven perfectamente para estudiar, escribir y aprender.
+-   Navegan en internet sin problemas.
+-   Reproducen video en HD.
+-   Corren herramientas de oficina, programación y diseño básico.
+-   Sirven perfectamente para estudiar, escribir y aprender.
 
----
+------------------------------------------------------------------------
 
 ### 💻 Equipos para estudiantes de bajos recursos
 
@@ -185,41 +193,40 @@ No todos los estudiantes tienen acceso a una laptop nueva. Una computadora vieja
 
 El costo de esta solución es prácticamente cero:
 
-| Concepto | Costo |
-|----------|-------|
-| Linux (cualquier distro) | Gratis |
-| LibreOffice (suite de oficina) | Gratis |
-| Navegador web (Firefox) | Gratis |
-| Editor de código (VS Code, Gedit) | Gratis |
-| Laptop vieja de segunda mano | $300–$800 MXN |
+| Concepto                          | Costo           |
+|-----------------------------------|-----------------|
+| Linux (cualquier distro)          | Gratis          |
+| LibreOffice (suite de oficina)    | Gratis          |
+| Navegador web (Firefox)           | Gratis          |
+| Editor de código (VS Code, Gedit) | Gratis          |
+| Laptop vieja de segunda mano      | \$300–\$800 MXN |
 
 Con una inversión mínima (o ninguna, si la laptop ya existe), se puede equipar a un estudiante con todas las herramientas que necesita.
 
----
+------------------------------------------------------------------------
 
 ### 🎒 Un banco de laptops prestables
 
 La idea es simple y ya funciona en muchas escuelas y comunidades:
 
 ::: {.callout-note icon="false" title="🏫 Cómo funciona un banco de laptops con Linux"}
-1. **Recolectar** laptops viejas donadas por familias, empresas o instituciones.
-2. **Evaluar** hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.
-3. **Instalar** una distro ligera (Lubuntu, Xubuntu o Mint XFCE).
-4. **Configurar** con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.
-5. **Prestar** la laptop a estudiantes que la necesiten durante el semestre.
-6. **Recuperar, limpiar y reutilizar** al terminar el periodo.
+1.  **Recolectar** laptops viejas donadas por familias, empresas o instituciones.
+2.  **Evaluar** hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.
+3.  **Instalar** una distro ligera (Lubuntu, Xubuntu o Mint XFCE).
+4.  **Configurar** con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.
+5.  **Prestar** la laptop a estudiantes que la necesiten durante el semestre.
+6.  **Recuperar, limpiar y reutilizar** al terminar el periodo.
 :::
 
 Linux facilita esto de forma especial: como no hay licencias que administrar, puedes clonar la misma configuración en decenas de laptops sin costo adicional. Herramientas como **Clonezilla** permiten copiar la instalación completa de una laptop a otra en minutos.
 
----
+------------------------------------------------------------------------
 
 ## El argumento completo
 
 ::: {.callout-tip icon="false" title="¿Por qué Linux en laptops viejas tiene sentido?"}
-
 | Dimensión | Impacto |
-|-----------|---------|
+|---------------------------------------|---------------------------------|
 | 🌱 **Ambiental** | Reduce basura electrónica; extiende vida útil de hardware |
 | 💰 **Económico** | Cero costo de software; hardware de segunda mano accesible |
 | 📚 **Educativo** | Da acceso a herramientas digitales a estudiantes sin recursos |
@@ -227,13 +234,12 @@ Linux facilita esto de forma especial: como no hay licencias que administrar, pu
 | 🤝 **Comunitario** | Permite crear bancos de préstamo sostenibles y replicables |
 | 🏛️ **Institucional** | Coherente con la misión pública; sin dependencia de proveedores privados |
 | 🌍 **Geopolítico** | Soberanía digital; no datos en servidores extranjeros sin control |
-
 :::
 
 Una laptop vieja no es basura. Es una oportunidad.
 
----
+------------------------------------------------------------------------
 
 ::: {.callout-tip icon="false" title="¿Lista para empezar? 👉"}
-Ve a **[🔍 Elige tu distro](elige-distro.qmd)** para encontrar el Linux adecuado para tu laptop.
+Ve a [**🔍 Elige tu distro**](elige-distro.qmd) para encontrar el Linux adecuado para tu laptop.
 :::
