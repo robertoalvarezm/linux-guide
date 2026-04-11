@@ -133,6 +133,85 @@ Linux facilita esto de forma especial: como no hay licencias que administrar, pu
 
 ---
 
+## 🏛️ ¿Por qué software libre en una universidad pública?
+
+Una universidad pública tiene una misión particular: producir y compartir conocimiento para el bien común. Esa misión choca directamente con el modelo de software propietario.
+
+::: {.callout-note icon="false" title="El problema con el software propietario en lo público"}
+Cuando una institución pública paga licencias de Windows, Microsoft Office o Adobe, está usando dinero de los contribuyentes para fortalecer el monopolio de empresas privadas —muchas veces extranjeras— sobre la infraestructura tecnológica del Estado y la educación.
+:::
+
+El software libre resuelve esto en tres dimensiones:
+
+### 💰 Sin pago de licencias
+
+El costo de las licencias de software propietario es real y significativo:
+
+| Software | Costo aproximado por equipo/año |
+|----------|---------------------------------|
+| Windows 11 Pro | ~$200–$300 USD |
+| Microsoft 365 (por usuario) | ~$150 USD |
+| Adobe Creative Cloud | ~$600 USD |
+| **Total posible por máquina** | **$900+ USD / año** |
+
+Con Linux + LibreOffice + GIMP + herramientas libres: **$0**. Ese dinero puede destinarse a infraestructura, becas o más equipos.
+
+### 🎓 Calidad de primer nivel — sin costo
+
+El software libre no es software de segunda clase. Las herramientas que se usan en producción a nivel mundial son libres y gratuitas:
+
+- **Sistema operativo:** Linux (corre el 96% de los servidores web del mundo)
+- **Suite de oficina:** LibreOffice (compatible con formatos de Microsoft Office)
+- **Navegador:** Firefox (Fundación Mozilla, sin fines de lucro)
+- **Programación:** Python, R, Julia, VS Code, Git — todos gratuitos y de código abierto
+- **Diseño:** GIMP, Inkscape, Blender
+- **Base de datos:** PostgreSQL, MariaDB
+- **Ciencia de datos:** Jupyter, pandas, scikit-learn
+
+Estas son exactamente las herramientas que usan universidades como MIT, Stanford y ETH Zurich. No hay versión "de paga que funciona mejor" — es el mismo software.
+
+### 🔓 Transparencia y autonomía institucional
+
+::: {.profile-card .profile-green}
+Con software libre, la universidad **sabe exactamente qué corre en sus equipos**. No hay cláusulas de licencia que prohíban el uso, no hay actualizaciones forzadas que rompen flujos de trabajo, no hay riesgo de que el proveedor decida subir el precio o discontinuar el producto.
+
+La institución tiene el control — no la empresa.
+:::
+
+---
+
+## 🌍 Gobiernos que ya migraron — o están migrando — a Linux
+
+Si esto te parece una idea experimental de entusiastas, aquí está la realidad: **gobiernos de países desarrollados están abandonando Windows activamente**, por razones de soberanía digital, seguridad y costo.
+
+### 🇫🇷 Francia (2026) — La decisión más reciente
+
+Francia anunció planes para migrar parte de sus computadoras gubernamentales de Windows a Linux, buscando reducir su dependencia de la tecnología estadounidense. El ministro David Amiel declaró que el esfuerzo busca "recuperar el control de nuestro destino digital" y que el gobierno ya no puede aceptar no tener control sobre sus datos e infraestructura digital.
+
+La migración comenzará con los equipos de la agencia digital del gobierno francés, DINUM. Esto no es un caso aislado: Francia opera más de 103,000 computadoras con GendBuntu, una distribución personalizada basada en Ubuntu utilizada por la Gendarmería Nacional.
+
+### 🇩🇪 Alemania — Schleswig-Holstein
+
+En abril de 2024, el estado alemán de Schleswig-Holstein anunció la migración completa de más de 30,000 trabajadores gubernamentales de Windows a Linux, incluyendo LibreOffice, Nextcloud y Thunderbird — una de las migraciones más grandes en la historia de los gobiernos europeos.
+
+La motivación va más allá del ahorro económico: al alojar herramientas de código abierto en servidores propios dentro de la UE, se garantiza que la información gubernamental no fluya hacia jurisdicciones extranjeras.
+
+### 🇩🇰 Dinamarca
+
+El Ministerio de Asuntos Digitales de Dinamarca se comprometió a una transición completa a Linux y LibreOffice, con el objetivo de eliminar la dependencia del software de Microsoft.
+
+### Y más...
+
+India desplegó Maya OS, un sistema basado en Ubuntu desarrollado por su organización de defensa (DRDO), para reemplazar Windows en instalaciones militares. Hay migraciones parciales o sectoriales también en Rusia, China, Brasil y Turquía.
+
+::: {.callout-important icon="false" title="¿Por qué ahora?"}
+Esta tendencia se enmarca en la creciente inestabilidad e impredecibilidad geopolítica, y en la conciencia de los legisladores europeos sobre su excesiva dependencia de la tecnología estadounidense. Los gobiernos están descubriendo lo que el software libre lleva décadas argumentando: depender de un proveedor privado extranjero para tu infraestructura digital es un riesgo estratégico.
+
+Para una universidad pública, el argumento es exactamente el mismo — solo que a escala institucional.
+:::
+
+---
+
 ## El argumento completo
 
 ::: {.callout-tip icon="false" title="¿Por qué Linux en laptops viejas tiene sentido?"}
@@ -144,6 +223,8 @@ Linux facilita esto de forma especial: como no hay licencias que administrar, pu
 | 📚 **Educativo** | Da acceso a herramientas digitales a estudiantes sin recursos |
 | 🔓 **Tecnológico** | Software libre, sin licencias caducadas ni suscripciones |
 | 🤝 **Comunitario** | Permite crear bancos de préstamo sostenibles y replicables |
+| 🏛️ **Institucional** | Coherente con la misión pública; sin dependencia de proveedores privados |
+| 🌍 **Geopolítico** | Soberanía digital; no datos en servidores extranjeros sin control |
 
 :::
 
