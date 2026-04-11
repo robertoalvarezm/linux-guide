@@ -73,66 +73,6 @@ Lo que no domina — todavía — es el escritorio personal. Pero eso está camb
 
 ---
 
-## ¿Por qué instalar Linux en laptops viejas?
-
-Aquí es donde la filosofía se vuelve práctica. Rescatar una laptop vieja con Linux no es solo una solución técnica — tiene implicaciones sociales y ambientales reales.
-
----
-
-### ♻️ Menos basura electrónica
-
-::: {.profile-card .profile-green}
-Los desechos electrónicos (e-waste) son el tipo de residuo de más rápido crecimiento en el mundo. Una laptop contiene metales como plomo, mercurio y cadmio que contaminan suelos y agua cuando terminan en basureros.
-
-**Instalar Linux puede extender la vida útil de una laptop entre 5 y 10 años adicionales.** Una máquina que "ya no sirve para Windows 11" puede correr Linux perfectamente durante años más.
-:::
-
-Hay laptops del año 2010–2015 que con una distro ligera como Lubuntu o Xubuntu:
-
-- Navegan en internet sin problemas.
-- Reproducen video en HD.
-- Corren herramientas de oficina, programación y diseño básico.
-- Sirven perfectamente para estudiar, escribir y aprender.
-
----
-
-### 💻 Equipos para estudiantes de bajos recursos
-
-::: {.profile-card .profile-yellow}
-No todos los estudiantes tienen acceso a una laptop nueva. Una computadora vieja rescatada con Linux puede ser **la diferencia entre tener o no tener herramientas digitales** para estudiar, hacer tareas o aprender a programar.
-:::
-
-El costo de esta solución es prácticamente cero:
-
-| Concepto | Costo |
-|----------|-------|
-| Linux (cualquier distro) | Gratis |
-| LibreOffice (suite de oficina) | Gratis |
-| Navegador web (Firefox) | Gratis |
-| Editor de código (VS Code, Gedit) | Gratis |
-| Laptop vieja de segunda mano | $300–$800 MXN |
-
-Con una inversión mínima (o ninguna, si la laptop ya existe), se puede equipar a un estudiante con todas las herramientas que necesita.
-
----
-
-### 🎒 Un banco de laptops prestables
-
-La idea es simple y ya funciona en muchas escuelas y comunidades:
-
-::: {.callout-note icon="false" title="🏫 Cómo funciona un banco de laptops con Linux"}
-1. **Recolectar** laptops viejas donadas por familias, empresas o instituciones.
-2. **Evaluar** hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.
-3. **Instalar** una distro ligera (Lubuntu, Xubuntu o Mint XFCE).
-4. **Configurar** con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.
-5. **Prestar** la laptop a estudiantes que la necesiten durante el semestre.
-6. **Recuperar, limpiar y reutilizar** al terminar el periodo.
-:::
-
-Linux facilita esto de forma especial: como no hay licencias que administrar, puedes clonar la misma configuración en decenas de laptops sin costo adicional. Herramientas como **Clonezilla** permiten copiar la instalación completa de una laptop a otra en minutos.
-
----
-
 ## 🏛️ ¿Por qué software libre en una universidad pública?
 
 Una universidad pública tiene una misión particular: producir y compartir conocimiento para el bien común. Esa misión choca directamente con el modelo de software propietario.
@@ -209,6 +149,68 @@ Esta tendencia se enmarca en la creciente inestabilidad e impredecibilidad geopo
 
 Para una universidad pública, el argumento es exactamente el mismo — solo que a escala institucional.
 :::
+
+---
+
+
+
+## ¿Por qué instalar Linux en laptops viejas?
+
+Aquí es donde la filosofía se vuelve práctica. Rescatar una laptop vieja con Linux no es solo una solución técnica — tiene implicaciones sociales y ambientales reales.
+
+---
+
+### ♻️ Menos basura electrónica
+
+::: {.profile-card .profile-green}
+Los desechos electrónicos (e-waste) son el tipo de residuo de más rápido crecimiento en el mundo. Una laptop contiene metales como plomo, mercurio y cadmio que contaminan suelos y agua cuando terminan en basureros.
+
+**Instalar Linux puede extender la vida útil de una laptop entre 5 y 10 años adicionales.** Una máquina que "ya no sirve para Windows 11" puede correr Linux perfectamente durante años más.
+:::
+
+Hay laptops del año 2010–2015 que con una distro ligera como Lubuntu o Xubuntu:
+
+- Navegan en internet sin problemas.
+- Reproducen video en HD.
+- Corren herramientas de oficina, programación y diseño básico.
+- Sirven perfectamente para estudiar, escribir y aprender.
+
+---
+
+### 💻 Equipos para estudiantes de bajos recursos
+
+::: {.profile-card .profile-yellow}
+No todos los estudiantes tienen acceso a una laptop nueva. Una computadora vieja rescatada con Linux puede ser **la diferencia entre tener o no tener herramientas digitales** para estudiar, hacer tareas o aprender a programar.
+:::
+
+El costo de esta solución es prácticamente cero:
+
+| Concepto | Costo |
+|----------|-------|
+| Linux (cualquier distro) | Gratis |
+| LibreOffice (suite de oficina) | Gratis |
+| Navegador web (Firefox) | Gratis |
+| Editor de código (VS Code, Gedit) | Gratis |
+| Laptop vieja de segunda mano | $300–$800 MXN |
+
+Con una inversión mínima (o ninguna, si la laptop ya existe), se puede equipar a un estudiante con todas las herramientas que necesita.
+
+---
+
+### 🎒 Un banco de laptops prestables
+
+La idea es simple y ya funciona en muchas escuelas y comunidades:
+
+::: {.callout-note icon="false" title="🏫 Cómo funciona un banco de laptops con Linux"}
+1. **Recolectar** laptops viejas donadas por familias, empresas o instituciones.
+2. **Evaluar** hardware: revisar que pantalla, teclado, batería y disco funcionen mínimamente.
+3. **Instalar** una distro ligera (Lubuntu, Xubuntu o Mint XFCE).
+4. **Configurar** con las aplicaciones básicas: navegador, suite de oficina, editor de texto, herramientas de programación.
+5. **Prestar** la laptop a estudiantes que la necesiten durante el semestre.
+6. **Recuperar, limpiar y reutilizar** al terminar el periodo.
+:::
+
+Linux facilita esto de forma especial: como no hay licencias que administrar, puedes clonar la misma configuración en decenas de laptops sin costo adicional. Herramientas como **Clonezilla** permiten copiar la instalación completa de una laptop a otra en minutos.
 
 ---
 
